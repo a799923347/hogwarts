@@ -36,16 +36,16 @@ public class LongestPalindrome {
       if (left.equals(new StringBuilder(right).reverse().toString())) {
         return s;
       }
-      String former = longestPalindrome(s.substring(0, s.length()));
-      String latter = longestPalindrome(s.substring(1, s.length() + 1));
     } else {
-
+      String left = s.substring(0, length / 2 + 1);
+      String right = s.substring(length / 2);
+      if (left.equals(new StringBuilder(right).reverse().toString())) {
+        return s;
+      }
     }
-    return "";
-  }
-
-  private String findPalindrome(int start, int end, String s) {
-    return "";
+    String former = longestPalindrome(s.substring(0, s.length() - 1));
+    String latter = longestPalindrome(s.substring(1));
+    return former.length() >= latter.length() ? former : latter;
   }
 
 }
