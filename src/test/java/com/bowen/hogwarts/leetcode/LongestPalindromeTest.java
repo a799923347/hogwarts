@@ -11,6 +11,7 @@ class LongestPalindromeTest {
     String s = "babad";
     LongestPalindrome longestPalindrome = new LongestPalindrome();
     String result = longestPalindrome.longestPalindrome(s);
+    System.out.println(result);
     assert "bab".equals(result);
   }
 
@@ -19,6 +20,7 @@ class LongestPalindromeTest {
     String s = "cbbd";
     LongestPalindrome longestPalindrome = new LongestPalindrome();
     String result = longestPalindrome.longestPalindrome(s);
+    System.out.println(result);
     assert "bb".equals(result);
   }
 
@@ -30,6 +32,7 @@ class LongestPalindromeTest {
     String s = "babaddtattarrattatddetartrateedredividerb";
     LongestPalindrome longestPalindrome = new LongestPalindrome();
     String result = longestPalindrome.longestPalindrome(s);
-    assert "bb".equals(result);
+    System.out.println(result);
+    assert "ddtattarrattatdd".equals(result);
   }
 }

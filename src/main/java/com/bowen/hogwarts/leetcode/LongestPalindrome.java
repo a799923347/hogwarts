@@ -24,8 +24,15 @@ public class LongestPalindrome {
    *                                    /   \   /  \
    *                                  bab  aba aba bad
    *                                  return "bab"
+   * 超时
    */
+
+  private int currentAnsLeg = 1;
+
   public String longestPalindrome(String s) {
+    if (s.length() < currentAnsLeg) {
+      return "";
+    }
     int length = s.length();
     if (length == 1) {
       return s;
@@ -34,12 +41,14 @@ public class LongestPalindrome {
       String left = s.substring(0, length / 2);
       String right = s.substring(length / 2);
       if (left.equals(new StringBuilder(right).reverse().toString())) {
+        currentAnsLeg = s.length();
         return s;
       }
     } else {
       String left = s.substring(0, length / 2 + 1);
       String right = s.substring(length / 2);
       if (left.equals(new StringBuilder(right).reverse().toString())) {
+        currentAnsLeg = s.length();
         return s;
       }
     }
