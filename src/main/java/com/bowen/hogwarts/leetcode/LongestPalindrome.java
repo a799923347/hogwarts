@@ -57,4 +57,39 @@ public class LongestPalindrome {
     return former.length() >= latter.length() ? former : latter;
   }
 
+  /**
+   * 中心增长
+   */
+  public String longestPalindrome2(String s) {
+    if (s == null || s.length() == 0) {
+      return "";
+    }
+    int maxLength = 0, start = 0, end = 0;
+    for (int i = 0; i < s.length() - 1; i++) {
+      int[] rangePair;
+      if (s.charAt(i) == s.charAt(i + 1)) {
+        int[] range1 = expand(s, i, i + 1);
+        int[] range2 = expand(s, i, i);
+        rangePair = (range2[1] - range2[0]) > (range1[1] - range1[0]) ? range2 : range1;
+      } else {
+        rangePair = expand(s, i, i);
+      }
+      int length = (rangePair[1] - rangePair[0] + 1);
+      if (length > maxLength) {
+        maxLength = length;
+        start = rangePair[0];
+        end = rangePair[1];
+      }
+    }
+    return s.substring(start, ++end);
+  }
+
+  private int[] expand(String s, int left, int right) {
+    while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+      left--;
+      right++;
+    }
+    return new int[]{++left, --right};
+  }
+
 }
