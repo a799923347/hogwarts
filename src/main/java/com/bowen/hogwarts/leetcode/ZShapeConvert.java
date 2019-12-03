@@ -36,6 +36,10 @@ package com.bowen.hogwarts.leetcode;
  */
 public class ZShapeConvert {
 
+  /**
+   * 执行用时 :11 ms, 在所有 java 提交中击败了58.86%的用户
+   * 内存消耗 :38.8 MB, 在所有 java 提交中击败了94.74%的用户
+   */
   public String convert(String s, int numRows) {
     if (numRows == 1) {
       return s;
@@ -90,5 +94,37 @@ public class ZShapeConvert {
       }
       System.out.println();
     }
+  }
+
+  /**
+   * 官方题解，按行访问
+   *
+   * 首先访问 行 0 中的所有字符，接着访问 行 1，然后 行 2，依此类推...
+   * 对于所有整数 k，
+   * 行 0 中的字符位于索引 k(2*numRows−2) 处;
+   * 行 numRows−1 中的字符位于索引 k(2⋅numRows−2)+numRows−1 处;
+   * 内部的行 i 中的字符位于索引 k(2⋅numRows−2)+i  以及 (k+1)(2⋅numRows−2)−i 处;
+   *
+   * 执行用时 :4 ms, 在所有 java 提交中击败了95.61%的用户
+   * 内存消耗 :36.6 MB, 在所有 java 提交中击败了99.58%的用户
+   */
+  public String convert2(String s, int numRows) {
+    if (numRows == 1) {
+      return s;
+    }
+
+    StringBuilder ret = new StringBuilder();
+    int n = s.length();
+    int cycleLen = 2 * numRows - 2;
+
+    for (int i = 0; i < numRows; i++) {
+      for (int j = 0; j + i < n; j += cycleLen) {
+        ret.append(s.charAt(j + i));
+        if (i != 0 && i != numRows - 1 && j + cycleLen - i < n) {
+          ret.append(s.charAt(j + cycleLen - i));
+        }
+      }
+    }
+    return ret.toString();
   }
 }
