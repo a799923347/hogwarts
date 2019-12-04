@@ -47,4 +47,29 @@ public class IsPalindrome {
     }
   }
 
+  /**
+   * 不将整数转成string的解法，利用数组检验对称性
+   * 执行用时 :9 ms, 在所有 java 提交中击败了98.71%的用户
+   * 内存消耗 :36.3 MB, 在所有 java 提交中击败了96.50%的用户
+   */
+  public boolean isPalindrome2(int x) {
+    if (x < 0) {
+      return false;
+    }
+    // int类型最长不会超过10位
+    int[] ints = new int[10];
+    int count = 0;
+    while (x != 0) {
+      ints[count++] = x % 10;
+      x /= 10;
+    }
+    for (int left = 0, right = count - 1; left <= right; left++, right--) {
+      if (ints[left] == ints[right]) {
+        continue;
+      }
+      return false;
+    }
+    return true;
+  }
+
 }
