@@ -1,5 +1,8 @@
 package com.bowen.hogwarts.leetcode;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /**
  * 请你来实现一个 atoi 函数，使其能将字符串转换成整数。
  *
@@ -91,6 +94,45 @@ public class StringConvertInteger {
       }
       result = result * 10 + numericValue;
       startAccum = true;
+    }
+    return negative ? -result : result;
+  }
+
+  /**
+   * 正则解法
+   * 执行用时 :15 ms, 在所有 java 提交中击败了9.41%的用户
+   * 内存消耗 :37.1 MB, 在所有 java 提交中击败了81.31%的用户
+   */
+  public int myAtoi2(String str) {
+    Pattern pattern = Pattern.compile("^[\\+\\-]?\\d+");
+    Matcher matcher = pattern.matcher(str.trim());
+    if (!matcher.find()) {
+      return 0;
+    }
+    String group = matcher.group();
+    boolean negative = false;
+    if (group.charAt(0) == '-') {
+      negative = true;
+      group = group.substring(1);
+    } else if (group.charAt(0) == '+') {
+      group = group.substring(1);
+    }
+    int result = 0;
+    for (int i = 0; i < group.length(); i++) {
+      int numericValue = Character.getNumericValue(group.charAt(i));
+      boolean exceedMaxInt =
+          !negative && (Integer.MAX_VALUE / 10 < result || (Integer.MAX_VALUE / 10 == result
+              && Integer.MAX_VALUE % 10 < numericValue));
+      if (exceedMaxInt) {
+        return Integer.MAX_VALUE;
+      }
+      boolean exceedMinInt =
+          negative && (Integer.MAX_VALUE / 10 < result || (Integer.MAX_VALUE / 10 == result
+              && Integer.MAX_VALUE % 10 < numericValue - 1));
+      if (exceedMinInt) {
+        return Integer.MIN_VALUE;
+      }
+      result = result * 10 + numericValue;
     }
     return negative ? -result : result;
   }
