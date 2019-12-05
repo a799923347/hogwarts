@@ -52,78 +52,23 @@ package com.bowen.hogwarts.leetcode;
 public class IntegerToRomanString {
 
   /**
-   * 执行用时 :6 ms, 在所有 java 提交中击败了63.15%的用户
-   * 内存消耗 :36.5 MB, 在所有 java 提交中击败了100.00%的用户
+   * 执行用时 :5 ms, 在所有 java 提交中击败了93.56%的用户
+   * 内存消耗 :35.8 MB, 在所有 java 提交中击败了100.00%的用户
    */
   public String intToRoman(int num) {
-    int thousPo, nineHundredPo, fiveHundredPo, fourHundredPo, oneHundredPo, ninetyPo, fiftyPo, fortyPo, tenPo, ninePo, fivePo, fourPo, onePo;
-    String thousandMark = "M", nineHundredMark = "CM",
-        fiveHundredMark = "D", fourHundredMark = "CD",
-        oneHundredMark = "C", ninetyMark = "XC",
-        fiftyMark = "L", fortyMark = "XL",
-        tenMark = "X", nineMark = "IX",
-        fiveMark = "V", fourMark = "IV", oneMark = "I";
-    if ((thousPo = num / 1000) >= 1) {
-      num %= 1000;
+    int[] bases = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+    String[] marks = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+    StringBuilder resultBuilder = new StringBuilder();
+    for (int i = 0; i < bases.length; i++) {
+      int times = num / bases[i];
+      while (times >= 1) {
+        resultBuilder.append(marks[i]);
+        times--;
+      }
+      num %= bases[i];
     }
-    if ((nineHundredPo = num / 900) >= 1) {
-      num %= 900;
-    }
-    if ((fiveHundredPo = num / 500) >= 1) {
-      num %= 500;
-    }
-    if ((fourHundredPo = num / 400) >= 1) {
-      num %= 400;
-    }
-    if ((oneHundredPo = num / 100) >= 1) {
-      num %= 100;
-    }
-    if ((ninetyPo = num / 90) >= 1) {
-      num %= 90;
-    }
-    if ((fiftyPo = num / 50) >= 1) {
-      num %= 50;
-    }
-    if ((fortyPo = num / 40) >= 1) {
-      num %= 40;
-    }
-    if ((tenPo = num / 10) >= 1) {
-      num %= 10;
-    }
-    if ((ninePo = num / 9) >= 1) {
-      num %= 9;
-    }
-    if ((fivePo = num / 5) >= 1) {
-      num %= 5;
-    }
-    if ((fourPo = num / 4) >= 1) {
-      num %= 4;
-    }
-    onePo = num;
-    return repeat(thousandMark, thousPo)
-        + repeat(nineHundredMark, nineHundredPo)
-        + repeat(fiveHundredMark, fiveHundredPo)
-        + repeat(fourHundredMark, fourHundredPo)
-        + repeat(oneHundredMark, oneHundredPo)
-        + repeat(ninetyMark, ninetyPo)
-        + repeat(fiftyMark, fiftyPo)
-        + repeat(fortyMark, fortyPo)
-        + repeat(tenMark, tenPo)
-        + repeat(nineMark, ninePo)
-        + repeat(fiveMark, fivePo)
-        + repeat(fourMark, fourPo)
-        + repeat(oneMark, onePo);
+    return resultBuilder.toString();
   }
 
-  private String repeat(String mark, int times) {
-    if (times == 0) {
-      return "";
-    }
-    StringBuilder stringBuilder = new StringBuilder();
-    for (int i = 0; i < times; i++) {
-      stringBuilder.append(mark);
-    }
-    return stringBuilder.toString();
-  }
 
 }
