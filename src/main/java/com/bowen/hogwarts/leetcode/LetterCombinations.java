@@ -25,6 +25,7 @@ import java.util.Map;
 public class LetterCombinations {
 
   /**
+   * 暴力求解，两两计算笛卡尔积
    * 执行用时 :1 ms, 在所有 java 提交中击败了96.72%的用户
    * 内存消耗 :36 MB, 在所有 java 提交中击败了73.55%的用户
    */
