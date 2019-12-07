@@ -27,24 +27,22 @@ public class LongestSharedPrefix {
 
   /**
    * 执行用时 :1 ms, 在所有 java 提交中击败了90.30%的用户
-   * 内存消耗 :37.9 MB, 在所有 java 提交中击败了67.30%的用户
+   * 内存消耗 :37.7 MB, 在所有 java 提交中击败了72.15%的用户
    */
   public String longestCommonPrefix(String[] strs) {
     if (strs == null || strs.length == 0) {
       return "";
     }
-    StringBuilder resultBuilder = new StringBuilder();
     String firstString = strs[0];
     for (int i = 0; i < firstString.length(); i++) {
       for (int j = 1; j < strs.length; j++) {
         if (i == strs[j].length() || firstString.charAt(i) != strs[j].charAt(i)) {
           // 如果超出长度或者字符不匹配，则返回
-          return resultBuilder.toString();
+          return firstString.substring(0, i);
         }
       }
-      resultBuilder.append(firstString.charAt(i));
     }
-    return resultBuilder.toString();
+    return firstString;
   }
 
 }
