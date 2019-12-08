@@ -54,15 +54,15 @@ public class BracketIsValid {
     }};
     char[] chars = s.toCharArray();
     Stack<Character> stack = new Stack<>();
-    for (int i = 0; i < chars.length; i++) {
+    for (char aChar : chars) {
       if (stack.empty()) {
-        stack.push(chars[i]);
+        stack.push(aChar);
         continue;
       }
       Character pop = stack.pop();
-      if (!pop.equals(bracketPairMap.get(chars[i]))) {
+      if (!pop.equals(bracketPairMap.get(aChar))) {
         stack.push(pop);
-        stack.push(chars[i]);
+        stack.push(aChar);
       }
     }
     return stack.isEmpty();
