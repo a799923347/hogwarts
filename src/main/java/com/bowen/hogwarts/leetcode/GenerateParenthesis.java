@@ -35,17 +35,17 @@ public class GenerateParenthesis {
     return ans;
   }
 
-  public void backtrack(List<String> ans, String cur, int open, int close, int max) {
-    if (cur.length() == max * 2) {
-      ans.add(cur);
+  public void backtrack(List<String> ans, String concat, int open, int close, int max) {
+    if (concat.length() == max * 2) {
+      ans.add(concat);
       return;
     }
 
     if (open < max) {
-      backtrack(ans, cur + "(", open + 1, close, max);
+      backtrack(ans, concat + "(", open + 1, close, max);
     }
     if (close < open) {
-      backtrack(ans, cur + ")", open, close + 1, max);
+      backtrack(ans, concat + ")", open, close + 1, max);
     }
   }
 
