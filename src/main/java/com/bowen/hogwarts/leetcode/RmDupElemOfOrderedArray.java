@@ -39,14 +39,6 @@ public class RmDupElemOfOrderedArray {
       if (nums[j] != nums[j + 1]) {
         i++;
         nums[i] = nums[j + 1];
-        continue;
-      }
-      while (j < nums.length - 1 && nums[j] == nums[j + 1]) {
-        j++;
-      }
-      if (j < nums.length - 1) {
-        i++;
-        nums[i] = nums[j + 1];
       }
     }
     return i + 1;
