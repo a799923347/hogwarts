@@ -8,6 +8,8 @@ package com.bowen.hogwarts.sort;
  * 区和记录个数减少1个的新无序区；
  * 3. n-1趟结束，数组有序化了。
  *
+ * 选择排序是不稳定的，比如
+ * 序列5 8 5 2 9， 我们知道第一遍选择第1个元素5会和2交换，那么原序列中2个5的相对前后顺序就被破坏了
  * @author zhaobaowen
  */
 public class SelectionSort {
