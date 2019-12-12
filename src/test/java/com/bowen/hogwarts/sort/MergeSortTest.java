@@ -3,6 +3,7 @@ package com.bowen.hogwarts.sort;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
+import java.util.Random;
 import org.junit.jupiter.api.Test;
 
 class MergeSortTest {
@@ -17,8 +18,16 @@ class MergeSortTest {
 
   @Test
   void sort() {
-    int[] nums = new int[]{8, 2, 3, 4, 1, 9, 0, 7, 11, 3, 30, 21, 34, 15, 28, 18, 5, 16, 6, 10};
+    int length = 100;
+    int[] nums = new int[length];
+    Random random = new Random();
+    for (int i = 0; i < length; i++) {
+      nums[i] = random.nextInt(length);
+    }
+    System.out.println(length + "个数字，排序前：");
+    System.out.println(Arrays.toString(nums));
     int[] sort = new MergeSort().sort(nums);
+    System.out.println("排序后：");
     System.out.println(Arrays.toString(sort));
   }
 }
