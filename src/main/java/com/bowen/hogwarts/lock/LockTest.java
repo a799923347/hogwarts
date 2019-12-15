@@ -7,10 +7,8 @@ public class LockTest {
 
   private volatile int myInt = 0;
 
-  public void test() {
-    synchronized (this) {
-      System.out.println(myInt);
-    }
+  public synchronized void test() {
+    System.out.println(myInt);
   }
 
   public void setMyInt(int i) {
