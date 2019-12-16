@@ -22,4 +22,11 @@ public class SpringBootSchedulerSample {
     String taskName = "hahahahahahahahahah";
     log.info("定时任务{}执行,thread={}", taskName, Thread.currentThread());
   }
+
+  @Scheduled(cron = "0 0/1 * * * *")
+  public void scheduleGc() {
+    String taskName = "gcTrigger";
+    log.info("定时任务{}执行,thread={}", taskName, Thread.currentThread());
+    System.gc();
+  }
 }
