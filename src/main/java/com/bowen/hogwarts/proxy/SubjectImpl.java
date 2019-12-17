@@ -1,8 +1,11 @@
 package com.bowen.hogwarts.proxy;
 
+import org.springframework.stereotype.Service;
+
 /**
  * @author zhaobaowen
  */
+@Service
 public class SubjectImpl implements Subject {
 
   @Override

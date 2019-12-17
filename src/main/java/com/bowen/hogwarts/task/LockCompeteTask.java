@@ -18,7 +18,7 @@ public class LockCompeteTask {
   @Resource(name = "asyncExecutor")
   private Executor executor;
 
-  @Scheduled(cron = "0/1 * * * * *")
+  // @Scheduled(cron = "0/1 * * * * *")
   public void compete() {
     for (int i = 0; i < 20; i++) {
       executor.execute(this::runnableWrapper);

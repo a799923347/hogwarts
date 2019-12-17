@@ -17,7 +17,7 @@ public class LockUtil {
     myInt++;
     log.info("计算器值={}", myInt);
     // 休眠一段时间，方式代码执行过快，保证有锁的竞争
-    Thread.sleep(500);
+    // Thread.sleep(500);
   }
 
   public void test2() {
