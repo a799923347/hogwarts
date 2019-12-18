@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 @Slf4j
-public class ApiAspect {
+public class FlowControlApiAspect {
 
   @Pointcut("@annotation(com.bowen.hogwarts.sentinel.ApiFlowCtrl)")
   public void flowControlPointCut() {
