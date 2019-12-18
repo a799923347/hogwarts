@@ -41,6 +41,11 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-aop</artifactId>
     </dependency>
+    <dependency>
+      <groupId>com.alibaba.csp</groupId>
+      <artifactId>sentinel-core</artifactId>
+      <version>1.7.0</version>
+    </dependency>
 
     <dependency>
       <groupId>mysql</groupId>
