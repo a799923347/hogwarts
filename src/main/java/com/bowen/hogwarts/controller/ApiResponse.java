@@ -1,0 +1,36 @@
+package com.bowen.hogwarts.controller;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+/**
+ * @author zhaobaowen
+ */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ApiResponse<T> {
+
+  private static final Integer SUCCESS_CODE = 0;
+  private static final Integer ERROR_CODE = 1;
+
+  private Integer code;
+
+  private T data;
+
+  private String msg;
+
+  public static <T> ApiResponse<T> ok() {
+    return new ApiResponse<>(SUCCESS_CODE, null, "成功");
+  }
+
+  public static <T> ApiResponse<T> ok(T data) {
+    return new ApiResponse<>(SUCCESS_CODE, data, "成功");
+  }
+
+  public static <T> ApiResponse<T> fail(String msg) {
+    return new ApiResponse<>(ERROR_CODE, null, msg);
+  }
+}
