@@ -39,8 +39,18 @@ public class FlowControlInitiator implements ApplicationListener<ApplicationRead
         }
       }
     }
+    flowRules.add(defineAnnotationFlowRule("annotation"));
     FlowRuleManager.loadRules(flowRules);
     log.info("流控规则初始化完成，规则集={}", JSON.toJSONString(flowRules));
+  }
+
+  private FlowRule defineAnnotationFlowRule(String annotationResource) {
+    FlowRule rule = new FlowRule();
+    rule.setResource(annotationResource);
+    rule.setCount(10);
+    rule.setGrade(RuleConstant.FLOW_GRADE_QPS);
+    rule.setLimitApp("default");
+    return rule;
   }
 
   private FlowRule defineFlowRule(Method declaredMethod) {

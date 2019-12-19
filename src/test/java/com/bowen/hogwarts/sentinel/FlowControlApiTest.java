@@ -14,7 +14,7 @@ public class FlowControlApiTest {
   public static void main(String[] args) throws Exception {
     OkHttpClient client = new OkHttpClient();
     Request request = new Request.Builder()
-        .url("http://localhost:8080/flow/control/test")
+        .url("http://localhost:8080/flow/control/annotation")
         .build();
     for (int i = 0; i < 50; i++) {
       Response response = client.newCall(request).execute();
