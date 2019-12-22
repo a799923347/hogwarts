@@ -23,6 +23,8 @@ public class FlowControlController {
 
   @Resource
   private List<MyInterface> interfaces;
+  @Resource
+  private KotlinDemoService kotlinDemoService;
 
   @ApiFlowCtrl(prefix = "流控测试")
   @GetMapping("/test")
@@ -41,6 +43,13 @@ public class FlowControlController {
   public ApiResponse<?> annotationControlBlockHandler(BlockException blockExp) {
     log.error("注解控制的api资源流量异常，by={}", blockExp.getRule(), blockExp);
     return ApiResponse.fail("注解管理的api资源流量异常");
+  }
+
+  @SentinelResource(value = "annotation", blockHandler = "annotationControlBlockHandler")
+  @GetMapping("/kotlin")
+  public ApiResponse<?> kotlinApi() {
+    log.info("调用kotlin服务");
+    return kotlinDemoService.test();
   }
 
 }
