@@ -1,6 +1,7 @@
 package com.bowen.hogwarts.controller;
 
 import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -38,5 +39,9 @@ public class ApiResponse<T> {
 
   public static <D, T> ApiResponse<T> act(D data, Function<D, ApiResponse<T>> function) {
     return function.apply(data);
+  }
+
+  public static <T> ApiResponse<T> act(Supplier<ApiResponse<T>> supplier) {
+    return supplier.get();
   }
 }

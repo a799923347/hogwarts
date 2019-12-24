@@ -1,6 +1,5 @@
 package com.bowen.hogwarts.reactive;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.bowen.hogwarts.controller.ApiResponse;
 import java.time.LocalDateTime;
@@ -18,9 +17,9 @@ public class ReactiveController {
 
   @GetMapping("/hello")
   public Mono<ApiResponse<?>> hello() {
-    return Mono.just(ApiResponse.act(LocalDateTime.now(), time -> {
+    return Mono.just(ApiResponse.act(() -> {
       JSONObject jsonObject = new JSONObject();
-      jsonObject.put("ts", time);
+      jsonObject.put("ts", LocalDateTime.now());
       return ApiResponse.ok(jsonObject);
     }));
   }
