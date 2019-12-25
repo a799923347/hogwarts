@@ -13,7 +13,7 @@ class ReverseListNodeTest {
     head.next.next = new ListNode(3);
     head.next.next.next = new ListNode(4);
     head.next.next.next.next = new ListNode(5);
-    ListNode resultPointer = new ReverseListNode().reverseList(head);
+    ListNode resultPointer = new ReverseListNode().reverseList2(head);
     while (resultPointer != null) {
       System.out.print(resultPointer.val + "->");
       resultPointer = resultPointer.next;
