@@ -76,6 +76,8 @@ public class TwoNumberDivide {
    * 这其中得处理一些特殊的数，比如divisor是不能为0的，Integer.MIN_VALUE和Integer.MAX_VALUE
    *
    * tips：起初将数字全都取绝对值取计算，但是Integer.MIN_VALUE转成正数有溢出问题，所以反其道行之，取负数来计算
+   * 执行用时 :2 ms, 在所有 java 提交中击败了63.33%的用户
+   * 内存消耗 :33.5 MB, 在所有 java 提交中击败了78.81%的用户
    */
   public int divide2(int dividend, int divisor) {
     if (dividend == 0) {
@@ -100,7 +102,7 @@ public class TwoNumberDivide {
     for (int i = 31; i >= 0; i--) {
       if ((dividend >> i) < divisor) {
         quotient = 1 << i;
-        return quotient + backTrack(dividend - (divisor * quotient), divisor);
+        return quotient + backTrack(dividend - (divisor << i), divisor);
       }
     }
     return 1;
