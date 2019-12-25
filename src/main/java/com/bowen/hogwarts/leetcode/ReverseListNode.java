@@ -39,4 +39,20 @@ public class ReverseListNode {
     return prev;
   }
 
+  /**
+   * 递归解法
+   * 时间复杂度：O(n)，假设 n 是列表的长度，那么时间复杂度为 O(n)。
+   * 空间复杂度：O(n)，由于使用递归，将会使用隐式栈空间。递归深度可能会达到 n 层。
+   *
+   */
+  public ListNode reverseList2(ListNode head) {
+    if (head == null || head.next == null) {
+      return head;
+    }
+    ListNode p = reverseList2(head.next);
+    head.next.next = head;
+    head.next = null;
+    return p;
+  }
+
 }
