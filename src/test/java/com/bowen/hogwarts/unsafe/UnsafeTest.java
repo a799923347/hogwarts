@@ -18,4 +18,10 @@ public class UnsafeTest {
 
   }
 
+  @Test
+  public void test2() {
+    System.out.println(new Object());
+    System.out.println(new Object());
+  }
+
 }

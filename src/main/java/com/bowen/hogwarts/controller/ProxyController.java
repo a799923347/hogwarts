@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * 对比一个实现接口一个不实现接口在代理上是否有区别
  * @author zhaobaowen
  */
 @Slf4j
