@@ -4,6 +4,8 @@ import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -41,6 +43,15 @@ public class ThreadPoolConfig {
             5, TimeUnit.MINUTES, new ArrayBlockingQueue<>(50), threadFactory,
             new ThreadPoolExecutor.AbortPolicy());
     return executorService;
+  }
+
+  @Bean
+  public ScheduledExecutorService schedulerExecutorService() {
+    ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("bowen-scheduler-pool-%d")
+        .build();
+    ScheduledExecutorService executorService = new ScheduledThreadPoolExecutor(1, threadFactory);
+    return executorService;
+
   }
 
 }

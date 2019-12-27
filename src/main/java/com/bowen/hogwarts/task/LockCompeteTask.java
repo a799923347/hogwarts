@@ -18,7 +18,7 @@ public class LockCompeteTask {
 
   @Resource(name = "asyncExecutor")
   private Executor executor;
-  @Resource
+  @Resource(name = "executorService")
   private ExecutorService executorService;
 
   // @Scheduled(cron = "0/1 * * * * *")
