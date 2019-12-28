@@ -1,5 +1,7 @@
 package com.bowen.hogwarts.leetcode
 
+import kotlin.math.max
+
 /**
  * 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
  *
@@ -34,5 +36,50 @@ class MaxSubArray {
             }
         }
         return max
+    }
+
+    /**
+     * 分治算法：
+     * 当最大子数组有 n 个数字时：
+     * 若 n==1，返回此元素。
+     * left_sum 为最大子数组前 n/2 个元素，在索引为 (left + right) / 2 的元素属于左子数组。
+     * right_sum 为最大子数组的右子数组，为最后 n/2 的元素。
+     * cross_sum 是包含左右子数组且含索引 (left + right) / 2 的最大值。
+     *
+     * 执行用时 :216 ms, 在所有 kotlin 提交中击败了74.36%的用户
+     * 内存消耗 :36 MB, 在所有 kotlin 提交中击败了75.00%的用户
+     */
+    fun maxSubArray2(nums: IntArray): Int {
+        return divideConquer(nums, 0, nums.size - 1)
+    }
+
+    private fun divideConquer(nums: IntArray, start: Int, end: Int): Int {
+        if (start == end) {
+            return nums[start]
+        }
+        val middle = (start + end) / 2
+        val leftSum = divideConquer(nums, start, middle)
+        val rightSum = divideConquer(nums, middle + 1, end)
+        val acrossMiddleSum = acrossMiddleSum(nums, start, middle, end)
+        return max(max(leftSum, rightSum), acrossMiddleSum)
+    }
+
+    private fun acrossMiddleSum(nums: IntArray, start: Int, middle: Int, end: Int): Int {
+        if (start == end) {
+            return nums[start]
+        }
+        var leftMax = Int.MIN_VALUE
+        var leftSum = 0
+        for (leftPivot in middle downTo start) {
+            leftSum += nums[leftPivot]
+            leftMax = max(leftMax, leftSum)
+        }
+        var rightMax = Int.MIN_VALUE
+        var rightSum = 0
+        for (rightPivot in (middle + 1)..end) {
+            rightSum += nums[rightPivot]
+            rightMax = max(rightSum, rightMax)
+        }
+        return leftMax + rightMax
     }
 }
