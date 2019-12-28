@@ -1,4 +1,8 @@
 # HOGWARTS
+<p align="center">
+<img src="https://vignette.wikia.nocookie.net/harrypotter/images/a/ae/Hogwartscrest.png/revision/latest?cb=20110806202805" width=""/>
+</p>
+
 > 霍格沃兹魔法学校，小学生努力学习中...
 
 ## LeetCode
