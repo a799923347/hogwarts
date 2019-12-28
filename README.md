@@ -1,7 +1,7 @@
 # HOGWARTS
 > 霍格沃兹魔法学校，小学生努力学习中...
 
-#LeetCode
+## LeetCode
 - [有效的括号](src/main/java/com/bowen/hogwarts/leetcode/BracketIsValid.java)
 - [括号生成](src/main/java/com/bowen/hogwarts/leetcode/GenerateParenthesis.java)
 - [整数反转](src/main/java/com/bowen/hogwarts/leetcode/IntegerReverse.java)
