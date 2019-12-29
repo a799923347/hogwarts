@@ -3,7 +3,10 @@
 <img src="https://ftp.bmp.ovh/imgs/2019/12/4f48ba2e606721a7.png" width="300"/>
 </p>
 
-> 霍格沃兹魔法学校，小学生努力学习中...
+> 霍格沃茨魔法学校，（英语：Hogwarts School of Witchcraft and Wizardry），简称霍格沃茨，是英国作家J·K·罗琳的
+> 魔幻小说《哈利·波特》系列中魔法学校的主要场景，据称是欧洲三大魔法学校之一。  
+>
+> 本库主要用于本人平时的学习积累以及技术上一些相关想法的实践。遂取名Hogwarts，即学习的地方。
 ---
 ## 目录
 - [LeetCode](#LeetCode)
