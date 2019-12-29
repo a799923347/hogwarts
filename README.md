@@ -41,6 +41,10 @@
 - [Z字形变换](src/main/java/com/bowen/hogwarts/leetcode/ZShapeConvert.java)
 
 ### 分享总结
+- [Java函数式接口](files/Java函数式接口.pdf)
+- [聊聊单元测试](files/侃大山之单元测试.pdf)
+- [@Transactional注解回滚异常范围](files/@Transactional注解回滚异常范围.md)
+- [sql多余的引号可能导致的索引失效问题](files/sql多余的引号可能导致的索引失效问题.md)
 
 ### 面试备战
 - 面经
