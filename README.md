@@ -9,9 +9,22 @@
 > 本库主要用于本人平时的学习积累以及技术上一些相关想法的实践。遂取名Hogwarts，即学习的地方。
 ---
 ## 目录
+- [排序算法](#排序算法)
 - [LeetCode](#LeetCode)
 - [分享总结](#分享总结)
 - [面试备战](#面试备战)
+
+### 排序算法
+- 交换排序
+    - [冒泡排序](src/main/java/com/bowen/hogwarts/sort/BubbleSort.java)
+    - [快速排序](src/main/java/com/bowen/hogwarts/sort/QuickSort.java)
+- 插入排序
+    - [插入排序](src/main/java/com/bowen/hogwarts/sort/InsertionSort.java)
+    - [希尔排序](src/main/java/com/bowen/hogwarts/sort/ShellSort.java)
+- 选择排序
+    - [选择排序](src/main/java/com/bowen/hogwarts/sort/SelectionSort.java)
+    - [堆排序](src/main/java/com/bowen/hogwarts/sort/HeapSort.java)
+- [归并排序](src/main/java/com/bowen/hogwarts/sort/MergeSort.java)
 
 ### LeetCode
 - [有效的括号](src/main/java/com/bowen/hogwarts/leetcode/BracketIsValid.java)
