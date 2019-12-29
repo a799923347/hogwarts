@@ -58,6 +58,8 @@
     - [面经：为了拿到字节跳动offer，鬼知道我经历了啥...](https://mp.weixin.qq.com/s/mx7LAClkLgmEMHrmvE8ktQ)
     - [你离BAT之间，只差这一套Java面试题。](https://www.hollischuang.com/archives/2223)
     - [Spring常见面试题汇总（超详细回答-值得收藏）](https://mp.weixin.qq.com/s/q1mxZYShdnvEfF1zWrtZfg)
+    - [阿里面试题合集118道送答案（新总结）：天猫+蚂蚁金服+阿里巴巴](https://www.toutiao.com/i6758263258471203332)
+
 - 知识点
     - [HashMap? ConcurrentHashMap? 相信看完这篇没人能难住你！](https://juejin.im/post/5b551e8df265da0f84562403)
     - [从ReentrantLock的实现看AQS的原理及应用](https://mp.weixin.qq.com/s/sA01gxC4EbgypCsQt5pVog)
@@ -73,5 +75,4 @@
     - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
     - [select、poll、epoll之间的区别总结[整理]](https://www.cnblogs.com/anker/p/3265058.html)
     - [Java线程的6种状态及切换(透彻讲解)](https://blog.csdn.net/pange1991/article/details/53860651)
-    - [阿里面试题合集118道送答案（新总结）：天猫+蚂蚁金服+阿里巴巴](https://www.toutiao.com/i6758263258471203332)
     
