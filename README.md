@@ -58,6 +58,7 @@
 - [聊聊单元测试](files/侃大山之单元测试.pdf)
 - [@Transactional注解回滚异常范围](files/@Transactional注解回滚异常范围.md)
 - [sql多余的引号可能导致的索引失效问题](files/sql多余的引号可能导致的索引失效问题.md)
+- [死锁](files/死锁.md)
 
 ### 面试备战
 - 面经
