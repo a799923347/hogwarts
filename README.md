@@ -92,4 +92,5 @@
     - [Java异常体系(美团面试)](https://www.cnblogs.com/aspirant/p/10790803.html)
     - [面试常问的PECS原则，到底是什么鬼？](https://mp.weixin.qq.com/s/-xEqJttBB2R0MW6M66G7IA)
     - [如何设计出骚气的秒杀系统？](https://mp.weixin.qq.com/s/62Thk-KIPwFXSdupGMMq9Q)
+    - [面试再被问到一致性 Hash 算法，这样回答面试官！](https://mp.weixin.qq.com/s/bnuo7knTnp1U7ggEh840iQ)
     
