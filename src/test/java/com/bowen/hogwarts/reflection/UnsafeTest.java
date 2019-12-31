@@ -1,9 +1,8 @@
-package com.bowen.hogwarts.unsafe;
+package com.bowen.hogwarts.reflection;
 
 import java.lang.reflect.Field;
 import org.junit.jupiter.api.Test;
 import sun.misc.Unsafe;
-import sun.reflect.Reflection;
 
 /**
  * @author zhaobaowen
