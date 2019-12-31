@@ -30,6 +30,10 @@ public class PecsTest {
   @Test
   public void testExtends() {
     List<? extends T> extendsT = new ArrayList<>();
+    List<Child1> child1List = new ArrayList<>();
+    child1List.add(new Child1());
+    child1List.add(new Child2());
+    extendsT = child1List;
     // extendsT.add(new T()); // 报错 Required type: capture of ? extends T
     // extendsT.add(new Child1()); // 报错 Required type: capture of ? extends T
     // extendsT.add(new Parent1()); // 报错 Required type: capture of ? extends T
