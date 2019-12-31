@@ -90,4 +90,5 @@
     - [select、poll、epoll之间的区别总结[整理]](https://www.cnblogs.com/anker/p/3265058.html)
     - [Java线程的6种状态及切换(透彻讲解)](https://blog.csdn.net/pange1991/article/details/53860651)
     - [Java异常体系(美团面试)](https://www.cnblogs.com/aspirant/p/10790803.html)
+    - [面试常问的PECS原则，到底是什么鬼？](https://mp.weixin.qq.com/s/-xEqJttBB2R0MW6M66G7IA)
     
