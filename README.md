@@ -73,6 +73,8 @@
 - [死锁](files/死锁.md)
 
 ### 面试备战
+- 简历
+    - [大厂面试面试官看了直呼想要的简历](https://mp.weixin.qq.com/s/0pNv6pMnenKn1A9PE61VnQ)
 - 面经
     - [3 年经验的 Java 后端妹子，横扫阿里、滴滴、美团，整理出这份厚厚的 8000 字面经](https://mp.weixin.qq.com/s/w1jXMsgog8eaaSUDyWYNbA)
     - [一个妹子的后台面试经验总结（蚂蚁金服+美团+携程+滴滴+....）](https://mp.weixin.qq.com/s/3_iz8i0TeRP6X6PuIW1EYQ)
