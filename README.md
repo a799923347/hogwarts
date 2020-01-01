@@ -9,12 +9,20 @@
 > 本库主要用于本人平时的学习积累以及技术上一些相关想法的实践。遂取名Hogwarts，即学习的地方。
 ---
 ## 目录
+- [数据结构](#数据结构)
 - [排序算法](#排序算法)
 - [LeetCode](#LeetCode)
 - [分享总结](#分享总结)
 - [面试备战](#面试备战)
 
+---
+
+### 数据结构
+- 树
+    - [红黑树](https://mp.weixin.qq.com/s/lZQ1MThnkIoRURTnI8ZXYw)
+
 ### 排序算法
+- [十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/p/7674659.html)
 - 交换排序
     - [冒泡排序](src/main/java/com/bowen/hogwarts/sort/BubbleSort.java)
     - [快速排序](src/main/java/com/bowen/hogwarts/sort/QuickSort.java)
@@ -84,7 +92,6 @@
     - [JVM是怎么和操作系统交互的？](https://mp.weixin.qq.com/s/5cl6t1gAYM_qdlq_CtvcOQ)
     - [【原创】Java并发探索(3)之synchronized原理](https://mp.weixin.qq.com/s/uAyMS-Fl8MWhdk-wKLcIHg)
     - [JVM 必问知识点:类加载过程](https://mp.weixin.qq.com/s/jut6U-J5XubPOk5eiEWZew)
-    - [十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/p/7674659.html)
     - [从MySQL Bug#67718浅谈B+树索引的分裂优化](http://hedengcheng.com/?p=525)
     - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
     - [select、poll、epoll之间的区别总结[整理]](https://www.cnblogs.com/anker/p/3265058.html)
