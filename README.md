@@ -13,6 +13,7 @@
 - [排序算法](#排序算法)
 - [操作系统](#操作系统)
 - [缓存](#缓存)
+- [设计模式](#设计模式)
 - [LeetCode](#LeetCode)
 - [分享总结](#分享总结)
 - [面试备战](#面试备战)
@@ -42,6 +43,9 @@
 ### 缓存
 - [缓存穿透、缓存击穿、缓存雪崩、热点数据失效](https://juejin.im/post/5c9a67ac6fb9a070cb24bf34)
 - [避免缓存穿透的利器之BloomFilter](https://juejin.im/post/5db69365518825645656c0de)
+
+### 设计模式
+- [Java设计模式](https://java-design-patterns.com/)
 
 ### LeetCode
 - [有效的括号](src/main/java/com/bowen/hogwarts/leetcode/BracketIsValid.java)
