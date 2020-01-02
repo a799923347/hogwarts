@@ -17,6 +17,7 @@
 - [LeetCode](#LeetCode)
 - [分享总结](#分享总结)
 - [面试备战](#面试备战)
+- [工具](#工具)
 
 ---
 
@@ -118,3 +119,5 @@
     - [面试再被问到一致性 Hash 算法，这样回答面试官！](https://mp.weixin.qq.com/s/bnuo7knTnp1U7ggEh840iQ)
     - [不了解Java反射机制？看这篇就明白了！](https://mp.weixin.qq.com/s/kO0kVh2KwxiGMhh25LKLqQ)
     
+### 工具
+- [Mac环境搭建](https://mp.weixin.qq.com/s/HpxzVOZYhm0flf3ziANcGg)
