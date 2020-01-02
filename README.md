@@ -86,6 +86,10 @@
 ### 开发模式
 - [软件开发模式对比(瀑布、迭代、螺旋、敏捷)](https://www.cnblogs.com/-oyk/archive/2012/10/08/2714669.html)
 - [软件能力成熟度模型](https://baike.baidu.com/item/%E8%BD%AF%E4%BB%B6%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E6%A8%A1%E5%9E%8B)
+- [软件过程与项目管理（一）](https://www.jianshu.com/p/cf42afa8d886)
+- [软件过程与项目管理（二）](https://www.jianshu.com/p/a1eeee703306)
+- [软件过程与项目管理（三）](https://www.jianshu.com/p/a621cb19699a)
+- [软件过程与项目管理（四）](https://www.jianshu.com/p/70b15cca3e83)
 
 ### 面试备战
 - 简历
