@@ -13,6 +13,7 @@
 - [排序算法](#排序算法)
 - [操作系统](#操作系统)
 - [缓存](#缓存)
+- [分布式理论](#分布式理论)
 - [设计模式](#设计模式)
 - [LeetCode](#LeetCode)
 - [分享总结](#分享总结)
@@ -45,6 +46,9 @@
 ### 缓存
 - [缓存穿透、缓存击穿、缓存雪崩、热点数据失效](https://juejin.im/post/5c9a67ac6fb9a070cb24bf34)
 - [避免缓存穿透的利器之BloomFilter](https://juejin.im/post/5db69365518825645656c0de)
+
+### 分布式理论
+- [多图：Raft算法原理非常详细的解读](https://mp.weixin.qq.com/s/OwYcrSOwH-n_65u9PPUqoA)
 
 ### 设计模式
 - [Java设计模式](https://java-design-patterns.com/)
