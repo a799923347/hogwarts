@@ -112,7 +112,7 @@
     - [Spring常见面试题汇总（超详细回答-值得收藏）](https://mp.weixin.qq.com/s/q1mxZYShdnvEfF1zWrtZfg)
     - [阿里面试题合集118道送答案（新总结）：天猫+蚂蚁金服+阿里巴巴](https://www.toutiao.com/i6758263258471203332)
 
-- 知识点
+- 杂货铺
     - [HashMap? ConcurrentHashMap? 相信看完这篇没人能难住你！](https://juejin.im/post/5b551e8df265da0f84562403)
     - [从ReentrantLock的实现看AQS的原理及应用](https://mp.weixin.qq.com/s/sA01gxC4EbgypCsQt5pVog)
     - [【基本功】不可不说的Java“锁”事](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749434&idx=3&sn=5ffa63ad47fe166f2f1a9f604ed10091&chksm=bd12a5778a652c61509d9e718ab086ff27ad8768586ea9b38c3dcf9e017a8e49bcae3df9bcc8&scene=21#wechat_redirect)
