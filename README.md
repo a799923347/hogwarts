@@ -14,6 +14,7 @@
 - [操作系统](#操作系统)
 - [缓存](#缓存)
 - [分布式理论](#分布式理论)
+- [计算机网络](#计算机网络)
 - [设计模式](#设计模式)
 - [LeetCode](#LeetCode)
 - [分享总结](#分享总结)
@@ -51,6 +52,10 @@
 ### 分布式理论
 - [多图：Raft算法原理非常详细的解读](https://mp.weixin.qq.com/s/OwYcrSOwH-n_65u9PPUqoA)
 - [面试再被问到一致性 Hash 算法，这样回答面试官！](https://mp.weixin.qq.com/s/bnuo7knTnp1U7ggEh840iQ)
+
+### 计算机网络
+- [TCP为啥要3次握手和4次挥手？握两次手不行吗？](https://mp.weixin.qq.com/s/ANBpgkprBbB3g1UgvvOBjw)
+- [TCP协议详解](https://www.cnblogs.com/qdhxhz/p/10267932.html)
 
 ### 设计模式
 - [Java设计模式](https://java-design-patterns.com/)
@@ -118,8 +123,6 @@
     - [从ReentrantLock的实现看AQS的原理及应用](https://mp.weixin.qq.com/s/sA01gxC4EbgypCsQt5pVog)
     - [【基本功】不可不说的Java“锁”事](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749434&idx=3&sn=5ffa63ad47fe166f2f1a9f604ed10091&chksm=bd12a5778a652c61509d9e718ab086ff27ad8768586ea9b38c3dcf9e017a8e49bcae3df9bcc8&scene=21#wechat_redirect)
     - [从实际案例聊聊Java应用的GC优化](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651747273&idx=1&sn=7f947064a41eeecb6816a5d0838581ae&chksm=bd12aa848a65239289d5c39264e89bd175f377f6554bfe93b37ad6498cf13deff356333c5398&scene=21#wechat_redirect)
-    - [TCP为啥要3次握手和4次挥手？握两次手不行吗？](https://mp.weixin.qq.com/s/ANBpgkprBbB3g1UgvvOBjw)
-    - [【TCP协议】（1）---TCP协议详解](https://www.cnblogs.com/qdhxhz/p/10267932.html)
     - [JVM是怎么和操作系统交互的？](https://mp.weixin.qq.com/s/5cl6t1gAYM_qdlq_CtvcOQ)
     - [【原创】Java并发探索(3)之synchronized原理](https://mp.weixin.qq.com/s/uAyMS-Fl8MWhdk-wKLcIHg)
     - [JVM 必问知识点:类加载过程](https://mp.weixin.qq.com/s/jut6U-J5XubPOk5eiEWZew)
