@@ -16,6 +16,7 @@
 - [缓存](#缓存)
 - [分布式理论](#分布式理论)
 - [计算机网络](#计算机网络)
+- [数据库](#数据库)
 - [设计模式](#设计模式)
 - [LeetCode](#LeetCode)
 - [分享总结](#分享总结)
@@ -63,6 +64,9 @@
 ### 计算机网络
 - [TCP为啥要3次握手和4次挥手？握两次手不行吗？](https://mp.weixin.qq.com/s/ANBpgkprBbB3g1UgvvOBjw)
 - [TCP协议详解](https://www.cnblogs.com/qdhxhz/p/10267932.html)
+
+### 数据库
+- [MySQL中的行级锁,表级锁,页级锁](https://www.hollischuang.com/archives/914)
 
 ### 设计模式
 - [Java设计模式](https://java-design-patterns.com/)
