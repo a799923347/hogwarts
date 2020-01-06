@@ -43,6 +43,7 @@
 
 ### 操作系统
 - [零拷贝](https://developer.ibm.com/articles/j-zerocopy/)
+- [select、poll、epoll之间的区别总结[整理]](https://www.cnblogs.com/anker/p/3265058.html)
 
 ### 缓存
 - [缓存穿透、缓存击穿、缓存雪崩、热点数据失效](https://juejin.im/post/5c9a67ac6fb9a070cb24bf34)
@@ -129,7 +130,6 @@
     - [从MySQL Bug#67718浅谈B+树索引的分裂优化](http://hedengcheng.com/?p=525)
     - [MySQL索引为什么要用B+树实现？](https://mp.weixin.qq.com/s?__biz=MzIxMzk3Mjg5MQ==&mid=2247483916&idx=1&sn=bfc33b53f8176e6f4d7e64c087ad36a4&chksm=97afe0f8a0d869eeaa14d8b26eca9d6fa09f9fda4557b40cb22ebe75851aa4dfb67d822233d9&scene=0&subscene=90&sessionid=1539434820&ascene=7&devicetype=andro)
     - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
-    - [select、poll、epoll之间的区别总结[整理]](https://www.cnblogs.com/anker/p/3265058.html)
     - [Java线程的6种状态及切换(透彻讲解)](https://blog.csdn.net/pange1991/article/details/53860651)
     - [Java异常体系(美团面试)](https://www.cnblogs.com/aspirant/p/10790803.html)
     - [面试常问的PECS原则，到底是什么鬼？](https://mp.weixin.qq.com/s/-xEqJttBB2R0MW6M66G7IA)
