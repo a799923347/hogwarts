@@ -49,6 +49,12 @@
 
 ### 并发编程
 - [伪共享（false sharing），并发编程无声的性能杀手](https://www.cnblogs.com/cyfonly/p/5800758.html)
+- [HashMap? ConcurrentHashMap? 相信看完这篇没人能难住你！](https://juejin.im/post/5b551e8df265da0f84562403)
+- [从ReentrantLock的实现看AQS的原理及应用](https://mp.weixin.qq.com/s/sA01gxC4EbgypCsQt5pVog)
+- [【基本功】不可不说的Java“锁”事](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749434&idx=3&sn=5ffa63ad47fe166f2f1a9f604ed10091&chksm=bd12a5778a652c61509d9e718ab086ff27ad8768586ea9b38c3dcf9e017a8e49bcae3df9bcc8&scene=21#wechat_redirect)
+- [【原创】Java并发探索(3)之synchronized原理](https://mp.weixin.qq.com/s/uAyMS-Fl8MWhdk-wKLcIHg)
+- [Java线程的6种状态及切换(透彻讲解)](https://blog.csdn.net/pange1991/article/details/53860651)
+
 
 ### 缓存
 - [缓存穿透、缓存击穿、缓存雪崩、热点数据失效](https://juejin.im/post/5c9a67ac6fb9a070cb24bf34)
@@ -67,6 +73,8 @@
 
 ### 数据库
 - [MySQL中的行级锁,表级锁,页级锁](https://www.hollischuang.com/archives/914)
+- [从MySQL Bug#67718浅谈B+树索引的分裂优化](http://hedengcheng.com/?p=525)
+- [MySQL索引为什么要用B+树实现？](https://mp.weixin.qq.com/s?__biz=MzIxMzk3Mjg5MQ==&mid=2247483916&idx=1&sn=bfc33b53f8176e6f4d7e64c087ad36a4&chksm=97afe0f8a0d869eeaa14d8b26eca9d6fa09f9fda4557b40cb22ebe75851aa4dfb67d822233d9&scene=0&subscene=90&sessionid=1539434820&ascene=7&devicetype=andro)
 
 ### 设计模式
 - [Java设计模式](https://java-design-patterns.com/)
@@ -130,17 +138,10 @@
     - [阿里面试题合集118道送答案（新总结）：天猫+蚂蚁金服+阿里巴巴](https://www.toutiao.com/i6758263258471203332)
 
 - 杂货铺
-    - [HashMap? ConcurrentHashMap? 相信看完这篇没人能难住你！](https://juejin.im/post/5b551e8df265da0f84562403)
-    - [从ReentrantLock的实现看AQS的原理及应用](https://mp.weixin.qq.com/s/sA01gxC4EbgypCsQt5pVog)
-    - [【基本功】不可不说的Java“锁”事](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749434&idx=3&sn=5ffa63ad47fe166f2f1a9f604ed10091&chksm=bd12a5778a652c61509d9e718ab086ff27ad8768586ea9b38c3dcf9e017a8e49bcae3df9bcc8&scene=21#wechat_redirect)
     - [从实际案例聊聊Java应用的GC优化](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651747273&idx=1&sn=7f947064a41eeecb6816a5d0838581ae&chksm=bd12aa848a65239289d5c39264e89bd175f377f6554bfe93b37ad6498cf13deff356333c5398&scene=21#wechat_redirect)
     - [JVM是怎么和操作系统交互的？](https://mp.weixin.qq.com/s/5cl6t1gAYM_qdlq_CtvcOQ)
-    - [【原创】Java并发探索(3)之synchronized原理](https://mp.weixin.qq.com/s/uAyMS-Fl8MWhdk-wKLcIHg)
     - [JVM 必问知识点:类加载过程](https://mp.weixin.qq.com/s/jut6U-J5XubPOk5eiEWZew)
-    - [从MySQL Bug#67718浅谈B+树索引的分裂优化](http://hedengcheng.com/?p=525)
-    - [MySQL索引为什么要用B+树实现？](https://mp.weixin.qq.com/s?__biz=MzIxMzk3Mjg5MQ==&mid=2247483916&idx=1&sn=bfc33b53f8176e6f4d7e64c087ad36a4&chksm=97afe0f8a0d869eeaa14d8b26eca9d6fa09f9fda4557b40cb22ebe75851aa4dfb67d822233d9&scene=0&subscene=90&sessionid=1539434820&ascene=7&devicetype=andro)
     - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
-    - [Java线程的6种状态及切换(透彻讲解)](https://blog.csdn.net/pange1991/article/details/53860651)
     - [Java异常体系(美团面试)](https://www.cnblogs.com/aspirant/p/10790803.html)
     - [面试常问的PECS原则，到底是什么鬼？](https://mp.weixin.qq.com/s/-xEqJttBB2R0MW6M66G7IA)
     - [如何设计出骚气的秒杀系统？](https://mp.weixin.qq.com/s/62Thk-KIPwFXSdupGMMq9Q)
