@@ -53,6 +53,7 @@
 - [缓存穿透、缓存击穿、缓存雪崩、热点数据失效](https://juejin.im/post/5c9a67ac6fb9a070cb24bf34)
 - [避免缓存穿透的利器之BloomFilter](https://juejin.im/post/5db69365518825645656c0de)
 - [Redis9种数据结构以及它们的内部编码实现](https://mp.weixin.qq.com/s/GLqZf-0sLQ7nnJ8Xb9oVZQ)
+- [Redis为什么是单线程？为什么有如此高的性能？](https://juejin.im/post/5caae9876fb9a05e1530288b)
 
 ### 分布式理论
 - [多图：Raft算法原理非常详细的解读](https://mp.weixin.qq.com/s/OwYcrSOwH-n_65u9PPUqoA)
