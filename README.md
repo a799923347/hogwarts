@@ -12,6 +12,7 @@
 - [数据结构](#数据结构)
 - [排序算法](#排序算法)
 - [操作系统](#操作系统)
+- [并发编程](#并发编程)
 - [缓存](#缓存)
 - [分布式理论](#分布式理论)
 - [计算机网络](#计算机网络)
@@ -44,6 +45,9 @@
 ### 操作系统
 - [零拷贝](https://developer.ibm.com/articles/j-zerocopy/)
 - [select、poll、epoll之间的区别总结[整理]](https://www.cnblogs.com/anker/p/3265058.html)
+
+### 并发编程
+- [伪共享（false sharing），并发编程无声的性能杀手](https://www.cnblogs.com/cyfonly/p/5800758.html)
 
 ### 缓存
 - [缓存穿透、缓存击穿、缓存雪崩、热点数据失效](https://juejin.im/post/5c9a67ac6fb9a070cb24bf34)
