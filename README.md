@@ -54,6 +54,7 @@
 - [【基本功】不可不说的Java“锁”事](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651749434&idx=3&sn=5ffa63ad47fe166f2f1a9f604ed10091&chksm=bd12a5778a652c61509d9e718ab086ff27ad8768586ea9b38c3dcf9e017a8e49bcae3df9bcc8&scene=21#wechat_redirect)
 - [【原创】Java并发探索(3)之synchronized原理](https://mp.weixin.qq.com/s/uAyMS-Fl8MWhdk-wKLcIHg)
 - [Java线程的6种状态及切换(透彻讲解)](https://blog.csdn.net/pange1991/article/details/53860651)
+- [线程通信详解](https://mp.weixin.qq.com/s/zwM-_t-A4iztxGJ4sPgX2g)
 
 
 ### 缓存
