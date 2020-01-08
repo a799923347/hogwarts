@@ -1,4 +1,4 @@
-package com.bowen.hogwarts.pecs;
+package com.bowen.hogwarts.generics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,11 +16,11 @@ public class PecsTest {
    */
   @Test
   public void testSuper() {
-    List<? super T> superT = new ArrayList<>();
-    superT.add(new T());
-    superT.add(new Child1());
-    superT.add(new Child2());
-    superT.add(new Child3());
+    List<? super Pivot> superPivot = new ArrayList<>();
+    superPivot.add(new Pivot());
+    superPivot.add(new Child1());
+    superPivot.add(new Child2());
+    superPivot.add(new Child3());
   }
 
   /**
@@ -29,16 +29,16 @@ public class PecsTest {
    */
   @Test
   public void testExtends() {
-    List<? extends T> extendsT = new ArrayList<>();
+    List<? extends Pivot> extendsPivot = new ArrayList<>();
     List<Child1> child1List = new ArrayList<>();
     child1List.add(new Child1());
     child1List.add(new Child2());
-    extendsT = child1List;
-    // extendsT.add(new T()); // 报错 Required type: capture of ? extends T
-    // extendsT.add(new Child1()); // 报错 Required type: capture of ? extends T
-    // extendsT.add(new Parent1()); // 报错 Required type: capture of ? extends T
-    // extendsT.add(new Parent2()); // 报错 Required type: capture of ? extends T
-    // extendsT.add(new Object()); // 报错 Required type: capture of ? extends T
+    extendsPivot = child1List;
+    // extendsPivot.add(new Pivot()); // 报错 Required type: capture of ? extends Pivot
+    // extendsPivot.add(new Child1()); // 报错 Required type: capture of ? extends Pivot
+    // extendsPivot.add(new Parent1()); // 报错 Required type: capture of ? extends Pivot
+    // extendsPivot.add(new Parent2()); // 报错 Required type: capture of ? extends Pivot
+    // extendsPivot.add(new Object()); // 报错 Required type: capture of ? extends Pivot
   }
 
   /**
@@ -68,11 +68,11 @@ public class PecsTest {
 
   }
 
-  static class T extends Parent3 {
+  static class Pivot extends Parent3 {
 
   }
 
-  static class Child1 extends T {
+  static class Child1 extends Pivot {
 
   }
 

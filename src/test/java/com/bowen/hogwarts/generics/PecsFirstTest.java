@@ -1,4 +1,4 @@
-package com.bowen.hogwarts.pecs;
+package com.bowen.hogwarts.generics;
 
 import org.junit.Test;
 
