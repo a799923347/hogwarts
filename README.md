@@ -9,6 +9,7 @@
 > 本库主要用于本人平时的学习积累以及技术上一些相关想法的实践。遂取名Hogwarts，即学习的地方。
 ---
 ## 目录
+- [Java](#Java)
 - [数据结构](#数据结构)
 - [排序算法](#排序算法)
 - [操作系统](#操作系统)
@@ -25,6 +26,15 @@
 - [工具](#工具)
 
 ---
+
+### Java
+- [从实际案例聊聊Java应用的GC优化](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651747273&idx=1&sn=7f947064a41eeecb6816a5d0838581ae&chksm=bd12aa848a65239289d5c39264e89bd175f377f6554bfe93b37ad6498cf13deff356333c5398&scene=21#wechat_redirect)
+- [JVM是怎么和操作系统交互的？](https://mp.weixin.qq.com/s/5cl6t1gAYM_qdlq_CtvcOQ)
+- [JVM 必问知识点:类加载过程](https://mp.weixin.qq.com/s/jut6U-J5XubPOk5eiEWZew)
+- [Java异常体系(美团面试)](https://www.cnblogs.com/aspirant/p/10790803.html)
+- [面试常问的PECS原则，到底是什么鬼？](https://mp.weixin.qq.com/s/-xEqJttBB2R0MW6M66G7IA)
+- [不了解Java反射机制？看这篇就明白了！](https://mp.weixin.qq.com/s/kO0kVh2KwxiGMhh25LKLqQ)
+- [必会的44个Java性能优化细节！](https://mp.weixin.qq.com/s/pxKSlVBSTnEL0MuiY7UKBg)
 
 ### 数据结构
 - 树
@@ -143,16 +153,9 @@
     - [阿里面试题合集118道送答案（新总结）：天猫+蚂蚁金服+阿里巴巴](https://www.toutiao.com/i6758263258471203332)
 
 - 杂货铺
-    - [从实际案例聊聊Java应用的GC优化](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651747273&idx=1&sn=7f947064a41eeecb6816a5d0838581ae&chksm=bd12aa848a65239289d5c39264e89bd175f377f6554bfe93b37ad6498cf13deff356333c5398&scene=21#wechat_redirect)
-    - [JVM是怎么和操作系统交互的？](https://mp.weixin.qq.com/s/5cl6t1gAYM_qdlq_CtvcOQ)
-    - [JVM 必问知识点:类加载过程](https://mp.weixin.qq.com/s/jut6U-J5XubPOk5eiEWZew)
     - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
-    - [Java异常体系(美团面试)](https://www.cnblogs.com/aspirant/p/10790803.html)
-    - [面试常问的PECS原则，到底是什么鬼？](https://mp.weixin.qq.com/s/-xEqJttBB2R0MW6M66G7IA)
     - [如何设计出骚气的秒杀系统？](https://mp.weixin.qq.com/s/62Thk-KIPwFXSdupGMMq9Q)
-    - [不了解Java反射机制？看这篇就明白了！](https://mp.weixin.qq.com/s/kO0kVh2KwxiGMhh25LKLqQ)
     - [Dubbo 的 8000 字图文详解，建议收藏！](https://mp.weixin.qq.com/s/bwLSxsTRwhyOh_gTU0GVnQ)
-    - [必会的44个Java性能优化细节！](https://mp.weixin.qq.com/s/pxKSlVBSTnEL0MuiY7UKBg)
     - [阿里盒马领域驱动设计实践](https://www.infoq.cn/article/alibaba-freshhema-ddd-practice/)
     
 ### 工具
