@@ -69,6 +69,7 @@
 - [面试再被问到一致性 Hash 算法，这样回答面试官！](https://mp.weixin.qq.com/s/bnuo7knTnp1U7ggEh840iQ)
 - [CAP 一致性协议及应用解析](https://segmentfault.com/a/1190000018275818)
 - [Kafka的Consumer负载均衡算法](https://juejin.im/post/5baca032e51d450e735e74af)
+- [详解蚂蚁金服大规模分布式架构下数据一致性实践](https://mp.weixin.qq.com/s/eGcTO-zLUwtgqYmpyREm1Q)
 
 ### 计算机网络
 - [TCP为啥要3次握手和4次挥手？握两次手不行吗？](https://mp.weixin.qq.com/s/ANBpgkprBbB3g1UgvvOBjw)
