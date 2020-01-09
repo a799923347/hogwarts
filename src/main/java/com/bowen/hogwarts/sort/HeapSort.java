@@ -3,10 +3,10 @@ package com.bowen.hogwarts.sort;
 /**
  * 堆排序
  * 基于大顶堆
- * 1. 将初始待排序关键字序列(R1,R2….Rn)构建成大顶堆，此堆为初始的无序区；
- * 2. 将堆顶元素R[1]与最后一个元素R[n]交换，此时得到新的无序区(R1,R2,……Rn-1)和新的有序区(Rn),且满足R[1,2…n-1]<=R[n]；
- * 3. 由于交换后新的堆顶R[1]可能违反堆的性质，因此需要对当前无序区(R1,R2,……Rn-1)调整为新堆，然后再次将R[1]与
- *    无序区最后一个元素交换，得到新的无序区(R1,R2….Rn-2)和新的有序区(Rn-1,Rn)。不断重复此过程直到有序区的元
+ * 1. 将初始待排序关键字序列(R_1,R_2….R_n)构建成大顶堆，此堆为初始的无序区；
+ * 2. 将堆顶元素R[1]与最后一个元素R[n]交换，此时得到新的无序区(R_1,R_2,……R_n-1)和新的有序区(R_n),且满足R[1,2…n-1]<=R[n]；
+ * 3. 由于交换后新的堆顶R[1]可能违反堆的性质，因此需要对当前无序区(R_1,R_2,……R_n-1)调整为新堆，然后再次将R[1]与
+ *    无序区最后一个元素交换，得到新的无序区(R_1,R_2….R_n-2)和新的有序区(R_n-1,R_n)。不断重复此过程直到有序区的元
  *    素个数为n-1，则整个排序过程完成。
  *
  * @author zhaobaowen
@@ -17,6 +17,7 @@ public class HeapSort {
     buildMaxHeap(nums);
     int border = nums.length;
     for (int i = nums.length - 1; i >= 0; i--) {
+      // 交换堆顶最大的元素
       swap(nums, 0, i);
       border--;
       heapify(nums, 0, border);
@@ -49,6 +50,9 @@ public class HeapSort {
     if (rightChild <= border - 1 && nums[rightChild] > nums[largest]) {
       largest = rightChild;
     }
+    // 非初始化大顶堆，在迭代维护大顶堆性质的过程中调用此方法时，由于此前，在第一步初始化大顶堆后，所有父节点一定
+    // 是大于孩子节点的，所以如果此处父节点比两个孩子节点大，再向下的孙子节点中也不会有更大的节点，所以就不需要再
+    // 向下搜索
     if (largest != currentRoot) {
       swap(nums, largest, currentRoot);
       heapify(nums, largest, border);
