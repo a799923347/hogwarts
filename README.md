@@ -68,12 +68,15 @@
 
 
 ### 缓存
+- [Redis基础](https://juejin.im/post/5db66ed9e51d452a2f15d833)
+- [缓存雪崩、击穿、穿透](https://juejin.im/post/5dbef8306fb9a0203f6fa3e2)
+- [Redis哨兵、持久化、主从、手撕LRU](https://juejin.im/post/5dc3a9fbf265da4d3c072eab)
+- [Redis双写一致性、并发竞争、线程模型](https://juejin.im/post/5dc850b4e51d452c2308ee27)
 - [缓存穿透、缓存击穿、缓存雪崩、热点数据失效](https://juejin.im/post/5c9a67ac6fb9a070cb24bf34)
 - [避免缓存穿透的利器之BloomFilter](https://juejin.im/post/5db69365518825645656c0de)
 - [Redis9种数据结构以及它们的内部编码实现](https://mp.weixin.qq.com/s/GLqZf-0sLQ7nnJ8Xb9oVZQ)
 - [Redis为什么是单线程？为什么有如此高的性能？](https://juejin.im/post/5caae9876fb9a05e1530288b)
 - [（讨论）缓存同步、如何保证缓存一致性、缓存误用](https://segmentfault.com/a/1190000015804406)
-- [Redis双写一致性、并发竞争、线程模型](https://juejin.im/post/5dc850b4e51d452c2308ee27)
 
 ### 分布式理论
 - [多图：Raft算法原理非常详细的解读](https://mp.weixin.qq.com/s/OwYcrSOwH-n_65u9PPUqoA)
