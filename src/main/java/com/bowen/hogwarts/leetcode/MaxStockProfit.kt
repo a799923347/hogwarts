@@ -41,4 +41,26 @@ class MaxStockProfit {
         }
         return max
     }
+
+    /**
+     * 一次遍历，由于限制在股票的收益最大，所以将寻找解的过程限制在了用后面较大的值减去前面较小的值，根据当前的最
+     * 小价格，如果后面的值高于这个价格，则比较计算最大收益；如果价格小于当前的最小价格，则更新最小价格的值，重复
+     * 前面的步骤，继续向后寻找最大的收益值
+     * 这样不需要双重循环，一次遍历就能找到最大的收入，时间复杂度O(n)
+     *
+     * 执行用时 :212 ms, 在所有 Kotlin 提交中击败了83.33%的用户
+     * 内存消耗 :36.2 MB, 在所有 Kotlin 提交中击败了66.67%的用户
+     */
+    fun maxProfit2(prices: IntArray): Int {
+        var minPrice = Int.MAX_VALUE
+        var maxProfit = 0
+        for (i in prices.indices) {
+            if (prices[i] < minPrice) {
+                minPrice = prices[i]
+            } else {
+                maxProfit = max(prices[i] - minPrice, maxProfit)
+            }
+        }
+        return maxProfit
+    }
 }
