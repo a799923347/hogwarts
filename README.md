@@ -16,6 +16,7 @@
 - [并发编程](#并发编程)
 - [缓存](#缓存)
 - [分布式理论](#分布式理论)
+- [Dubbo](#Dubbo)
 - [计算机网络](#计算机网络)
 - [数据库](#数据库)
 - [设计模式](#设计模式)
@@ -85,6 +86,12 @@
 - [CAP 一致性协议及应用解析](https://segmentfault.com/a/1190000018275818)
 - [Kafka的Consumer负载均衡算法](https://juejin.im/post/5baca032e51d450e735e74af)
 - [详解蚂蚁金服大规模分布式架构下数据一致性实践](https://mp.weixin.qq.com/s/eGcTO-zLUwtgqYmpyREm1Q)
+
+### Dubbo
+- [Dubbo 的 8000 字图文详解，建议收藏！](https://mp.weixin.qq.com/s/bwLSxsTRwhyOh_gTU0GVnQ)
+- [框架设计](https://dubbo.apache.org/zh-cn/docs/dev/design.html)
+- [实现细节](https://dubbo.apache.org/zh-cn/docs/dev/implementation.html)
+- [服务调用过程](https://dubbo.apache.org/zh-cn/docs/source_code_guide/service-invoking-process.html)
 
 ### 计算机网络
 - [TCP为啥要3次握手和4次挥手？握两次手不行吗？](https://mp.weixin.qq.com/s/ANBpgkprBbB3g1UgvvOBjw)
@@ -160,7 +167,6 @@
 - 杂货铺
     - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
     - [如何设计出骚气的秒杀系统？](https://mp.weixin.qq.com/s/62Thk-KIPwFXSdupGMMq9Q)
-    - [Dubbo 的 8000 字图文详解，建议收藏！](https://mp.weixin.qq.com/s/bwLSxsTRwhyOh_gTU0GVnQ)
     - [阿里盒马领域驱动设计实践](https://www.infoq.cn/article/alibaba-freshhema-ddd-practice/)
     
 ### 工具
