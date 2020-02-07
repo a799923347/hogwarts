@@ -149,7 +149,7 @@
 - [软件过程与项目管理（四）](https://www.jianshu.com/p/70b15cca3e83)
 
 ### 面试备战
-- 简历
+- 简历怎么写
     - [大厂面试面试官看了直呼想要的简历](https://mp.weixin.qq.com/s/0pNv6pMnenKn1A9PE61VnQ)
 - 面经
     - [3 年经验的 Java 后端妹子，横扫阿里、滴滴、美团，整理出这份厚厚的 8000 字面经](https://mp.weixin.qq.com/s/w1jXMsgog8eaaSUDyWYNbA)
