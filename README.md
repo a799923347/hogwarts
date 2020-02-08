@@ -169,6 +169,7 @@
     - [如何设计出骚气的秒杀系统？](https://mp.weixin.qq.com/s/62Thk-KIPwFXSdupGMMq9Q)
     - [阿里盒马领域驱动设计实践](https://www.infoq.cn/article/alibaba-freshhema-ddd-practice/)
     - [如何设计一个高并发系统？](https://github.com/doocs/advanced-java/blob/master/docs/high-concurrency/high-concurrency-design.md)
+    - [Spring-bean的循环依赖以及解决方式](https://blog.csdn.net/u010853261/article/details/77940767)
     
 ### 工具
 - [Mac环境搭建](https://mp.weixin.qq.com/s/HpxzVOZYhm0flf3ziANcGg)
