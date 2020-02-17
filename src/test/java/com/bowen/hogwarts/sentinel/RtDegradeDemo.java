@@ -92,30 +92,25 @@ public class RtDegradeDemo {
     initDegradeRule();
 
     for (int i = 0; i < threadCount; i++) {
-      Thread entryThread = new Thread(new Runnable() {
-
-        @Override
-        public void run() {
-          while (true) {
-            Entry entry = null;
-            try {
-              TimeUnit.MILLISECONDS.sleep(5);
-              entry = SphU.entry(KEY);
-              // token acquired
-              pass.incrementAndGet();
-              // sleep 600 ms, as rt
-              TimeUnit.MILLISECONDS.sleep(600);
-            } catch (Exception e) {
-              block.incrementAndGet();
-            } finally {
-              total.incrementAndGet();
-              if (entry != null) {
-                entry.exit();
-              }
+      Thread entryThread = new Thread(() -> {
+        while (true) {
+          Entry entry = null;
+          try {
+            TimeUnit.MILLISECONDS.sleep(5);
+            entry = SphU.entry(KEY);
+            // token acquired
+            pass.incrementAndGet();
+            // sleep 600 ms, as rt
+            TimeUnit.MILLISECONDS.sleep(600);
+          } catch (Exception e) {
+            block.incrementAndGet();
+          } finally {
+            total.incrementAndGet();
+            if (entry != null) {
+              entry.exit();
             }
           }
         }
-
       });
       entryThread.setName("working-thread");
       entryThread.start();

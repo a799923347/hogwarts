@@ -102,6 +102,7 @@
 - [从MySQL Bug#67718浅谈B+树索引的分裂优化](http://hedengcheng.com/?p=525)
 - [MySQL索引为什么要用B+树实现？](https://mp.weixin.qq.com/s?__biz=MzIxMzk3Mjg5MQ==&mid=2247483916&idx=1&sn=bfc33b53f8176e6f4d7e64c087ad36a4&chksm=97afe0f8a0d869eeaa14d8b26eca9d6fa09f9fda4557b40cb22ebe75851aa4dfb67d822233d9&scene=0&subscene=90&sessionid=1539434820&ascene=7&devicetype=andro)
 - [一条简单的更新语句，MySQL是如何加锁的](https://mp.weixin.qq.com/s/X4Kn1ZnPrGLqBcBoJY1ObA)
+- [这一次，彻底读懂Mysql执行计划](https://juejin.im/post/5a52386d51882573443c852a)
 
 ### 设计模式
 - [Java设计模式](https://java-design-patterns.com/)
