@@ -49,7 +49,7 @@ public void execute(Runnable command) {
          * 运行至此处说明线程池处于运行状态且Runnable成功被添加到队列中
          */
         int recheck = ctl.get();
-        // 重新获取ctl的值建厂运行状态，如果非running状态则将Runnable从队列中移除，移除成功则执行预定义的reject的策略
+        // 重新获取ctl的运行状态，如果非running状态则将Runnable从队列中移除，移除成功则执行预定义的reject的策略
         if (! isRunning(recheck) && remove(command))
             reject(command);
         // 线程池处于running状态 or 非running状态但从队列移除Runnable失败
@@ -59,5 +59,86 @@ public void execute(Runnable command) {
     }
     else if (!addWorker(command, false))
         reject(command);
+}
+```
+#### addWorker方法
+```java
+private boolean addWorker(Runnable firstTask, boolean core) {
+    retry:
+    for (;;) {
+        int c = ctl.get();
+        int rs = runStateOf(c);
+
+        // Check if queue empty only if necessary.
+        if (rs >= SHUTDOWN &&
+            ! (rs == SHUTDOWN &&
+               firstTask == null &&
+               ! workQueue.isEmpty()))
+            return false;
+
+        for (;;) {
+            // 获取worker的数量
+            int wc = workerCountOf(c);
+            // 1 如果worker的数量超出CAPACITY则直接返回false
+            // 2 在worker未超出CAPACITY的情况下，
+            //   2.1 如果指明使用核心线程且worker超出了核心线程的数量，则返回false
+            //   2.2 如果未指明使用核心线程且worker超出了最大线程数，则返回false
+            //   否则代码继续往下走
+            if (wc >= CAPACITY ||
+                wc >= (core ? corePoolSize : maximumPoolSize))
+                return false;
+            // 通过cas操作增加worker的数量，如果成功则跳出break代码块
+            if (compareAndIncrementWorkerCount(c))
+                break retry;
+            // 运行到这里说明cas操作失败，重新获取control的值
+            c = ctl.get();  // Re-read ctl
+            // 如果线程池的运行状态因为上述操作发生了变化，则重新执行break代码块
+            // 如果线程是的状态没有变化则重试for循环
+            if (runStateOf(c) != rs)
+                continue retry;
+            // else CAS failed due to workerCount change; retry inner loop
+        }
+    }
+    // 代码运行到这里说明cas增加worker数量的操作成功了
+    boolean workerStarted = false;
+    boolean workerAdded = false;
+    Worker w = null;
+    try {
+        // Worker封装线程执行逻辑，两个主要成员变量：Thread和Runnable，Runnable的值来自外部传递进来的Runnable，Thread一般由ThreadFactory新建
+        w = new Worker(firstTask);
+        final Thread t = w.thread;
+        if (t != null) {
+            final ReentrantLock mainLock = this.mainLock;
+            mainLock.lock();
+            try {
+                // Recheck while holding lock.
+                // Back out on ThreadFactory failure or if
+                // shut down before lock acquired.
+                int rs = runStateOf(ctl.get());
+
+                if (rs < SHUTDOWN ||
+                    (rs == SHUTDOWN && firstTask == null)) {
+                    if (t.isAlive()) // precheck that t is startable
+                        throw new IllegalThreadStateException();
+                    workers.add(w);
+                    int s = workers.size();
+                    if (s > largestPoolSize)
+                        largestPoolSize = s;
+                    workerAdded = true;
+                }
+            } finally {
+                mainLock.unlock();
+            }
+            // worker添加成功，则启动线程，运行Worker对象中的runWorker(Worker w)方法
+            if (workerAdded) {
+                t.start();
+                workerStarted = true;
+            }
+        }
+    } finally {
+        if (! workerStarted)
+            addWorkerFailed(w);
+    }
+    return workerStarted;
 }
 ```
