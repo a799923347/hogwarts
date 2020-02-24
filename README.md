@@ -97,6 +97,7 @@
 ### 计算机网络
 - [TCP为啥要3次握手和4次挥手？握两次手不行吗？](https://mp.weixin.qq.com/s/ANBpgkprBbB3g1UgvvOBjw)
 - [TCP协议详解](https://www.cnblogs.com/qdhxhz/p/10267932.html)
+- [TCP/IP五层模型和OSI七层模型](https://segmentfault.com/a/1190000019062885)
 
 ### 数据库
 - [MySQL中的行级锁,表级锁,页级锁](https://www.hollischuang.com/archives/914)
