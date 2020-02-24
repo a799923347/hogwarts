@@ -166,6 +166,7 @@
     - [你离BAT之间，只差这一套Java面试题。](https://www.hollischuang.com/archives/2223)
     - [Spring常见面试题汇总（超详细回答-值得收藏）](https://mp.weixin.qq.com/s/q1mxZYShdnvEfF1zWrtZfg)
     - [阿里面试题合集118道送答案（新总结）：天猫+蚂蚁金服+阿里巴巴](https://www.toutiao.com/i6758263258471203332)
+    - [我的后台Java面经（阿里、腾讯、头条、京东、IBM等）](https://mp.weixin.qq.com/s/YXzRW6t9FEr1YXLqGBotLA)
 
 - 杂货铺
     - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
