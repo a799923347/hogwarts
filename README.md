@@ -80,6 +80,7 @@
 - [Redis为什么是单线程？为什么有如此高的性能？](https://juejin.im/post/5caae9876fb9a05e1530288b)
 - [（讨论）缓存同步、如何保证缓存一致性、缓存误用](https://segmentfault.com/a/1190000015804406)
 - [Redis持久化机制：RDB和AOF](https://juejin.im/post/5d776dcef265da03b574744d)
+- [Redis 为什么用跳表而不用平衡树？](https://juejin.im/post/57fa935b0e3dd90057c50fbc)
 
 ### 分布式理论
 - [多图：Raft算法原理非常详细的解读](https://mp.weixin.qq.com/s/OwYcrSOwH-n_65u9PPUqoA)
