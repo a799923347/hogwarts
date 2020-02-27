@@ -138,6 +138,7 @@
 - [两数相除](src/main/java/com/bowen/hogwarts/leetcode/TwoNumberDivide.java)
 - [两数相加](src/main/java/com/bowen/hogwarts/leetcode/TwoNumbersAddition.java)
 - [Z字形变换](src/main/java/com/bowen/hogwarts/leetcode/ZShapeConvert.java)
+- [字符串的排列](src/main/java/com/bowen/hogwarts/leetcode/StringCheckInclusion.java)
 
 ### 分享总结
 - [Java函数式接口](files/Java函数式接口.pdf)
