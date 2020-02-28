@@ -181,6 +181,7 @@
     - [阿里盒马领域驱动设计实践](https://www.infoq.cn/article/alibaba-freshhema-ddd-practice/)
     - [如何设计一个高并发系统？](https://github.com/doocs/advanced-java/blob/master/docs/high-concurrency/high-concurrency-design.md)
     - [Spring-bean的循环依赖以及解决方式](https://blog.csdn.net/u010853261/article/details/77940767)
+    - [9000+ 字，彻底征服 Spring AOP ，美滋滋](https://mp.weixin.qq.com/s/BYxXMAEIfOSCCx1KanP9lg)
     
 ### 工具
 - [Mac环境搭建](https://mp.weixin.qq.com/s/HpxzVOZYhm0flf3ziANcGg)
