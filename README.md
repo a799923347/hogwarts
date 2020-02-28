@@ -143,6 +143,8 @@
 - [两数相加](src/main/java/com/bowen/hogwarts/leetcode/TwoNumbersAddition.java)
 - [Z字形变换](src/main/java/com/bowen/hogwarts/leetcode/ZShapeConvert.java)
 - [字符串的排列](src/main/java/com/bowen/hogwarts/leetcode/StringCheckInclusion.java)
+- [翻转字符串里的单词](src/main/java/com/bowen/hogwarts/leetcode/ReverseWordsOfString.java)
+- [二叉树的锯齿形层次遍历](src/main/java/com/bowen/hogwarts/leetcode/ZigzagTraverseBinaryTree.java)
 
 ### 分享总结
 - [Java函数式接口](files/Java函数式接口.pdf)
