@@ -31,6 +31,7 @@ public class StrStr {
    * 内存消耗 :37.3 MB, 在所有 java 提交中击败了53.81%的用户
    */
   public int strStr(String haystack, String needle) {
+    // todo implementation
     return haystack.indexOf(needle);
   }
 }
