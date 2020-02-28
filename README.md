@@ -15,6 +15,7 @@
 - [操作系统](#操作系统)
 - [并发编程](#并发编程)
 - [缓存](#缓存)
+- [消息队列](#消息队列)
 - [分布式理论](#分布式理论)
 - [Dubbo](#Dubbo)
 - [计算机网络](#计算机网络)
@@ -82,6 +83,9 @@
 - [（讨论）缓存同步、如何保证缓存一致性、缓存误用](https://segmentfault.com/a/1190000015804406)
 - [Redis持久化机制：RDB和AOF](https://juejin.im/post/5d776dcef265da03b574744d)
 - [Redis 为什么用跳表而不用平衡树？](https://juejin.im/post/57fa935b0e3dd90057c50fbc)
+
+### 消息队列
+- [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
 
 ### 分布式理论
 - [多图：Raft算法原理非常详细的解读](https://mp.weixin.qq.com/s/OwYcrSOwH-n_65u9PPUqoA)
@@ -173,7 +177,6 @@
     - [我的后台Java面经（阿里、腾讯、头条、京东、IBM等）](https://mp.weixin.qq.com/s/YXzRW6t9FEr1YXLqGBotLA)
 
 - 杂货铺
-    - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
     - [如何设计出骚气的秒杀系统？](https://mp.weixin.qq.com/s/62Thk-KIPwFXSdupGMMq9Q)
     - [阿里盒马领域驱动设计实践](https://www.infoq.cn/article/alibaba-freshhema-ddd-practice/)
     - [如何设计一个高并发系统？](https://github.com/doocs/advanced-java/blob/master/docs/high-concurrency/high-concurrency-design.md)
