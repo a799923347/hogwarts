@@ -38,6 +38,7 @@
 - [面试常问的PECS原则，到底是什么鬼？](https://mp.weixin.qq.com/s/-xEqJttBB2R0MW6M66G7IA)
 - [不了解Java反射机制？看这篇就明白了！](https://mp.weixin.qq.com/s/kO0kVh2KwxiGMhh25LKLqQ)
 - [必会的44个Java性能优化细节！](https://mp.weixin.qq.com/s/pxKSlVBSTnEL0MuiY7UKBg)
+- [Java OutOfMemory异常清单 —— 在自己的机器上制造内存溢出](https://blog.csdn.net/hzy38324/article/details/76719105)
 
 ### 数据结构
 - 树
