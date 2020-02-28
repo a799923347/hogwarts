@@ -64,11 +64,9 @@ public class ThreeNumberSum {
     List<List<Integer>> resultCollection = new ArrayList<>();
     Arrays.sort(nums);
     for (int i = 0; i < nums.length - 2; i++) {
+      // 出现连续相同的数字则跳过
       if (i > 0 && nums[i - 1] == nums[i]) {
         continue;
-      }
-      if (nums[i] > 0) {
-        break;
       }
       int left = i + 1, right = nums.length - 1;
       while (left < right) {
