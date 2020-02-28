@@ -1,6 +1,7 @@
 package com.bowen.hogwarts.leetcode;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -88,6 +89,44 @@ public class ZigzagTraverseBinaryTree {
       result.add(children);
     }
     return result;
+  }
+
+  /**
+   * 官方题解的另一种解法：深度优先搜索
+   * 执行用时 :2 ms, 在所有 Java 提交中击败了21.84%的用户
+   * 内存消耗 :37.8 MB, 在所有 Java 提交中击败了5.00%的用户
+   */
+  public List<List<Integer>> zigzagLevelOrder2(TreeNode root) {
+    if (root == null) {
+      return new ArrayList<>();
+    }
+    List<List<Integer>> results = new ArrayList<>();
+    dfs(root, 0, results);
+    return results;
+  }
+
+  protected void dfs(TreeNode node, int level, List<List<Integer>> results) {
+    if (level >= results.size()) {
+      LinkedList<Integer> newLevel = new LinkedList<>();
+      newLevel.add(node.val);
+      results.add(newLevel);
+    } else {
+      if (level % 2 == 0) {
+        results.get(level).add(node.val);
+      } else {
+        // add 的时候指明index为0，即在前方插入，这样即可实现这一层的倒序排列
+        // tips:此处层数计算从0开始，则偶数层从左向右，奇数层从右向左，与上面自己实现的广度优先搜索层数
+        //      从1开始记略有区别
+        results.get(level).add(0, node.val);
+      }
+    }
+
+    if (node.left != null) {
+      dfs(node.left, level + 1, results);
+    }
+    if (node.right != null) {
+      dfs(node.right, level + 1, results);
+    }
   }
 
 }

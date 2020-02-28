@@ -15,7 +15,7 @@ public class ZigzagTraverseBinaryTreeTest {
     root.right = new TreeNode(20);
     root.right.left = new TreeNode(15);
     root.right.right = new TreeNode(7);
-    List<List<Integer>> lists = new ZigzagTraverseBinaryTree().zigzagLevelOrder(root);
+    List<List<Integer>> lists = new ZigzagTraverseBinaryTree().zigzagLevelOrder2(root);
     System.out.println(JSON.toJSONString(lists));
   }
 }
