@@ -49,7 +49,7 @@ public class CyclicBarrierTest {
     CyclicBarrier barrier = new CyclicBarrier(N);
     ExecutorService exec = Executors.newCachedThreadPool();
     for (int i = 0; i < N; ++i) {
-      exec.execute(new WriteTaskTwo(barrier));
+      exec.execute(new WriteTask(barrier));
     }
     exec.shutdown();
   }

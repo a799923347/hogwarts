@@ -23,12 +23,12 @@ class WriteTaskTwo implements Runnable {
 
   @Override
   public void run() {
-
+    // 循环，重复使用barrier
     while (!Thread.interrupted()) {
       System.out.println(this + " 开始写入数据...");
       try {
         TimeUnit.MILLISECONDS.sleep(random.nextInt(5000));      //以睡眠来模拟写入数据操作
-        System.out.println(this + " 写入数据完毕，等待其他线程写入完毕" + " " + Thread.currentThread());
+        System.out.println(this + " 写入数据完毕，等待其他线程写入完毕，当前线程：" + " " + Thread.currentThread());
         barrier.await();
         TimeUnit.MILLISECONDS.sleep(10);
       } catch (InterruptedException e) {
@@ -36,7 +36,7 @@ class WriteTaskTwo implements Runnable {
       } catch (BrokenBarrierException e) {
         throw new RuntimeException(e);
       }
-      System.out.println("所有任务写入完毕，继续处理其他任务... " + Thread.currentThread());
+      System.out.println("线程："+ Thread.currentThread() +"继续处理其他任务... ");
     }
 
   }
@@ -62,8 +62,10 @@ class CyclicBarrierManager implements Runnable {
 
   @Override
   public void run() {
+    // 循环，重复使用barrier
     while (!Thread.interrupted()) {
       try {
+        System.out.println("执行manager中的run方法...");
         barrier.await();
       } catch (InterruptedException e) {
         System.out.println(getClass().getSimpleName() + " 被中断了！");
