@@ -104,7 +104,8 @@ private boolean addWorker(Runnable firstTask, boolean core) {
     boolean workerAdded = false;
     Worker w = null;
     try {
-        // Worker封装线程执行逻辑，两个主要成员变量：Thread和Runnable，Runnable的值来自外部传递进来的Runnable，Thread一般由ThreadFactory新建
+        // Worker封装线程执行逻辑，两个主要成员变量：Thread和Runnable，Runnable的值来自外部传递进来的Runnable，
+        // Thread一般由ThreadFactory新建
         w = new Worker(firstTask);
         final Thread t = w.thread;
         if (t != null) {
