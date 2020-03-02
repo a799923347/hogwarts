@@ -114,6 +114,7 @@
 - [一条简单的更新语句，MySQL是如何加锁的](https://mp.weixin.qq.com/s/X4Kn1ZnPrGLqBcBoJY1ObA)
 - [这一次，彻底读懂Mysql执行计划](https://juejin.im/post/5a52386d51882573443c852a)
 - [MySQL的InnoDB索引原理详解](https://kyle.ai/blog/6439.html)
+- [B树和B+树的插入、删除图文详解](https://www.cnblogs.com/nullzx/p/8729425.html)
 
 ### 设计模式
 - [Java设计模式](https://java-design-patterns.com/)
