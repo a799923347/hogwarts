@@ -22,7 +22,7 @@
 - [数据库](#数据库)
 - [设计模式](#设计模式)
 - [LeetCode](#LeetCode)
-- [分享 & 好记性不如烂笔头](#分享 & 好记性不如烂笔头)
+- [分享与好记性不如烂笔头](#分享与好记性不如烂笔头)
 - [开发模式](#开发模式)
 - [面试备战](#面试备战)
 - [工具](#工具)
@@ -150,7 +150,7 @@
 - [翻转字符串里的单词](src/main/java/com/bowen/hogwarts/leetcode/ReverseWordsOfString.java)
 - [二叉树的锯齿形层次遍历](src/main/java/com/bowen/hogwarts/leetcode/ZigzagTraverseBinaryTree.java)
 
-### 分享 & 好记性不如烂笔头
+### 分享与好记性不如烂笔头
 - [Java函数式接口](files/Java函数式接口.pdf)
 - [聊聊单元测试](files/侃大山之单元测试.pdf)
 - [@Transactional注解回滚异常范围](files/@Transactional注解回滚异常范围.md)
