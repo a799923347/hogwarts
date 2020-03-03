@@ -32,6 +32,7 @@
 ### Java
 - [从实际案例聊聊Java应用的GC优化](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651747273&idx=1&sn=7f947064a41eeecb6816a5d0838581ae&chksm=bd12aa848a65239289d5c39264e89bd175f377f6554bfe93b37ad6498cf13deff356333c5398&scene=21#wechat_redirect)
 - [了解 CMS 垃圾回收日志](http://ifeve.com/jvm-cms-log/)
+- [GC之详解CMS收集过程和日志分析](https://www.cnblogs.com/zhangxiaoguang/p/5792468.html)
 - [JVM是怎么和操作系统交互的？](https://mp.weixin.qq.com/s/5cl6t1gAYM_qdlq_CtvcOQ)
 - [JVM 必问知识点:类加载过程](https://mp.weixin.qq.com/s/jut6U-J5XubPOk5eiEWZew)
 - [Java异常体系(美团面试)](https://www.cnblogs.com/aspirant/p/10790803.html)
