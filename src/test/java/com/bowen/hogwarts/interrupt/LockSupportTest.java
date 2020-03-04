@@ -19,9 +19,9 @@ public class LockSupportTest {
     myThread.start();
     Thread.sleep(2000);
     myThread.interrupt();
-    System.out.println("主线程将要唤醒子线程");
+    System.out.println("主线程 " + Thread.currentThread() + " 将要唤醒子线程");
     LockSupport.unpark(myThread);
-    System.out.println("主线程已触发子线程的唤醒");
+    System.out.println("主线程 " + Thread.currentThread() + " 已触发子线程的唤醒");
     Thread.sleep(2000);
   }
 
