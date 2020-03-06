@@ -91,6 +91,7 @@
 
 ### 消息队列
 - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
+- [Kafka为什么速度那么快？](https://juejin.im/post/5cd2db8951882530b11ee976)
 
 ### 分布式理论
 - [多图：Raft算法原理非常详细的解读](https://mp.weixin.qq.com/s/OwYcrSOwH-n_65u9PPUqoA)
