@@ -87,6 +87,7 @@
 - [（讨论）缓存同步、如何保证缓存一致性、缓存误用](https://segmentfault.com/a/1190000015804406)
 - [Redis持久化机制：RDB和AOF](https://juejin.im/post/5d776dcef265da03b574744d)
 - [Redis 为什么用跳表而不用平衡树？](https://juejin.im/post/57fa935b0e3dd90057c50fbc)
+- [Redis面试题（一）: Redis到底是多线程还是单线程？](https://blog.csdn.net/bird73/article/details/79792548)
 
 ### 消息队列
 - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
