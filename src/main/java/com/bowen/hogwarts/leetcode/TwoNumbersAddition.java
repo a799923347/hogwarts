@@ -68,6 +68,9 @@ public class TwoNumbersAddition {
     return resultHead;
   }
 
+  /**
+   * 官方题解
+   */
   public ListNode addTwoNumbersV2(ListNode l1, ListNode l2) {
     ListNode dummyHead = new ListNode(0);
     ListNode p = l1, q = l2, curr = dummyHead;
@@ -87,6 +90,7 @@ public class TwoNumbersAddition {
       }
     }
     if (carry > 0) {
+      // 注意此处的curr已经移动过指针了
       curr.next = new ListNode(carry);
     }
     return dummyHead.next;
