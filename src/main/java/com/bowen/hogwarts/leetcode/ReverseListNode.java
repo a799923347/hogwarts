@@ -40,6 +40,21 @@ public class ReverseListNode {
   }
 
   /**
+   * 对比上面的实现，官方的更简洁
+   */
+  public ListNode reverseList3(ListNode head) {
+    ListNode prev = null;
+    ListNode curr = head;
+    while (curr != null) {
+      ListNode nextTemp = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = nextTemp;
+    }
+    return prev;
+  }
+
+  /**
    * 递归解法
    * 利用递归时虚拟机栈的入栈出栈，实现链表指针的后退
    *
