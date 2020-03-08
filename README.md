@@ -153,6 +153,7 @@
 - [字符串的排列](src/main/java/com/bowen/hogwarts/leetcode/StringCheckInclusion.java)
 - [翻转字符串里的单词](src/main/java/com/bowen/hogwarts/leetcode/ReverseWordsOfString.java)
 - [二叉树的锯齿形层次遍历](src/main/java/com/bowen/hogwarts/leetcode/ZigzagTraverseBinaryTree.java)
+- [重排链表](src/main/java/com/bowen/hogwarts/leetcode/ReorderList.java)
 
 ### 分享与好记性不如烂笔头
 - [Java函数式接口](files/Java函数式接口.pdf)
