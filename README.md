@@ -61,7 +61,9 @@
 
 ### 操作系统
 - [零拷贝](https://developer.ibm.com/articles/j-zerocopy/)
-- [select、poll、epoll之间的区别总结[整理]](https://www.cnblogs.com/anker/p/3265058.html)
+- [聊聊同步、异步、阻塞与非阻塞](https://www.jianshu.com/p/aed6067eeac9)
+- [聊聊Linux 五种IO模型](https://www.jianshu.com/p/486b0965c296)
+- [聊聊IO多路复用之select、poll、epoll详解](https://www.jianshu.com/p/dfd940e7fca2)
 
 ### 并发编程
 - [伪共享（false sharing），并发编程无声的性能杀手](https://www.cnblogs.com/cyfonly/p/5800758.html)
