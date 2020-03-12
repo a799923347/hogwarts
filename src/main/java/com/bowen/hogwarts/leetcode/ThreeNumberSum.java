@@ -74,9 +74,11 @@ public class ThreeNumberSum {
         if (sum == 0) {
           resultCollection
               .add(Stream.of(nums[i], nums[left], nums[right]).collect(Collectors.toList()));
+          // left跳过后面相同的数字
           while (left < right && nums[left + 1] == nums[left]) {
             left++;
           }
+          // right跳过前面相同的数字
           while (left < right && nums[right - 1] == nums[right]) {
             right--;
           }
