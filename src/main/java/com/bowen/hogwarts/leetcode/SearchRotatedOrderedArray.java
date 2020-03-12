@@ -50,6 +50,7 @@ public class SearchRotatedOrderedArray {
     if (nums[middle] == target) {
       return middle;
     }
+    // start与end之间的数组是单调递增的且target在数组边界范围内
     if (nums[start] < nums[end] && target >= nums[start] && target <= nums[end]) {
       if (target < nums[middle]) {
         return binarySearch(nums, start, middle, target);
@@ -57,6 +58,7 @@ public class SearchRotatedOrderedArray {
         return binarySearch(nums, middle + 1, end, target);
       }
     } else {
+      // 此分支用于处理非单调的数组区间
       int left = binarySearch(nums, start, middle, target);
       if (left != -1) {
         return left;
