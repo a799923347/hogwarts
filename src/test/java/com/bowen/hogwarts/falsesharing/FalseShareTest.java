@@ -59,6 +59,9 @@ public class FalseShareTest implements Runnable {
   public final static class VolatileLong {
 
     public volatile long value = 0L;
+    // 缓存行大小为64个字节，long类型为8个字节，
+    // 这里应该认为是32位系统，32位系统中对象头标记字段 32/8 = 4 个字节，类型指针占 4 个字节
+    // 所以填充 6 个 long 型字段，对象总大小即为 8 + 4 + 4 + 8 * 6 = 64 个字节
     // public long p1, p2, p3, p4, p5, p6;     //屏蔽此行
   }
 }
