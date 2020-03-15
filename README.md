@@ -157,6 +157,7 @@
 - [二叉树的锯齿形层次遍历](src/main/java/com/bowen/hogwarts/leetcode/ZigzagTraverseBinaryTree.java)
 - [重排链表](src/main/java/com/bowen/hogwarts/leetcode/ReorderList.java)
 - [LRU缓存机制](src/main/java/com/bowen/hogwarts/leetcode/LruCache.java)
+- [岛屿的最大面积](src/main/java/com/bowen/hogwarts/leetcode/MaxAreaOfIsland.java)
 - [复原IP地址](src/main/java/com/bowen/hogwarts/leetcode/RestoreIpAddresses.java)
 
 ### 分享与好记性不如烂笔头
