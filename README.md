@@ -159,6 +159,7 @@
 - [LRU缓存机制](src/main/java/com/bowen/hogwarts/leetcode/LruCache.java)
 - [岛屿的最大面积](src/main/java/com/bowen/hogwarts/leetcode/MaxAreaOfIsland.java)
 - [复原IP地址](src/main/java/com/bowen/hogwarts/leetcode/RestoreIpAddresses.java)
+- [最长连续递增序列](src/main/java/com/bowen/hogwarts/leetcode/FindLengthOfLCIS.java)
 
 ### 分享与好记性不如烂笔头
 - [Java函数式接口](files/Java函数式接口.pdf)
