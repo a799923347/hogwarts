@@ -201,6 +201,7 @@
     - [9000+ 字，彻底征服 Spring AOP ，美滋滋](https://mp.weixin.qq.com/s/BYxXMAEIfOSCCx1KanP9lg)
     - [Spring AOP 实现原理与 CGLIB 应用](https://www.ibm.com/developerworks/cn/java/j-lo-springaopcglib/index.html)
     - [如何解决秒杀的性能问题和超卖的讨论](https://www.cnblogs.com/billyxp/p/3701124.html)
+    - [Sentinel原理：滑动窗口](https://github.com/all4you/sentinel-tutorial/blob/master/sentinel-principle/sentinel-slide-window/sentinel-slide-window.md)
     
 ### 工具
 - [Mac环境搭建](https://mp.weixin.qq.com/s/HpxzVOZYhm0flf3ziANcGg)
