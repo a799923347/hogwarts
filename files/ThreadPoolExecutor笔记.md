@@ -3,7 +3,7 @@ private final AtomicInteger ctl = new AtomicInteger(ctlOf(RUNNING, 0));
 ```
 ctl:32位整型，高3位用于维护线程池的状态，低29位用于维护worker的数量(即线程的数量)。
 
-Worker继承了AQS，实现了Runnable接口，所以在exit的时候，使用AQS自有的Unsafe类+state状态的CAS来保证线程安全。所有的 Worker 保存在 HashSet<Worker> 中，Worker 的 run 方法（实际上调用的是 ThreadPoolExecutor 中的 runWorker 方法）中会循环从队列中获取任务，该功能的是通过 ThreadPoolExecutor 中的 getTask() 方法实现的，当队列返回 null 时， 在 ThreadPoolExecutor 的 processWorkerExit 方法中将 Worker 从 HashSet<Worker> 中移除（移除过程会加锁），也就是结束该线程，线程池的非核心线程的 keepAliveTime 的维护也是在 getTask 方法中完成的，当检测到线程数超过核心线程数<span style="border-bottom:2px dashed red;">或者</span>参数 allowCoreThreadTimeOut 为 true（即允许核心线程退出），关键代码 ```workQueue.poll(keepAliveTime, TimeUnit.NANOSECONDS)```。
+Worker继承了AQS，实现了Runnable接口，所以在exit的时候，使用AQS自有的Unsafe类+state状态的CAS来保证线程安全。所有的 Worker 保存在 HashSet<Worker> 中，Worker 的 run 方法（实际上调用的是 ThreadPoolExecutor 中的 runWorker 方法）中会循环从队列中获取任务，该功能的是通过 ThreadPoolExecutor 中的 getTask() 方法实现的，当队列返回 null 时， 在 ThreadPoolExecutor 的 processWorkerExit 方法中将 Worker 从 HashSet<Worker> 中移除（移除过程会加锁），也就是结束该线程，线程池的非核心线程的 keepAliveTime 的维护也是在 getTask 方法中完成的，当检测到线程数超过核心线程数<span style="border-bottom:2px dashed red;">或者</span>参数 allowCoreThreadTimeOut 为 true（即允许核心线程退出），关键代码 ```workQueue.poll(keepAliveTime, TimeUnit.NANOSECONDS)```，keepAliveTime 时间内获取不到任务，该 Worker 即可退出。
 
 #### execute()方法
 线程池执行入口，最上层的控制逻辑，基本可描述为：线程小于核心线程数时，启动一个新线程去执行任务，达到核心线程数后，则将提交的任务添加到队列中，如果添加队列失败则再继续启用新线程执行提交的任务，若此时线程已经达到限制的最大线程数，则按照初始化线程池时声明的策略reject任务。
