@@ -161,6 +161,7 @@
 - [复原IP地址](src/main/java/com/bowen/hogwarts/leetcode/RestoreIpAddresses.java)
 - [最长连续递增序列](src/main/java/com/bowen/hogwarts/leetcode/FindLengthOfLCIS.java)
 - [最长上升子序列](src/main/java/com/bowen/hogwarts/leetcode/LengthOfLis.java)
+- [合并区间](src/main/java/com/bowen/hogwarts/leetcode/MergeIntervals.java)
 
 ### 分享与好记性不如烂笔头
 - [Java函数式接口](files/Java函数式接口.pdf)
