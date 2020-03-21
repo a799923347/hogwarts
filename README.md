@@ -101,6 +101,7 @@
 - [CAP 一致性协议及应用解析](https://segmentfault.com/a/1190000018275818)
 - [Kafka的Consumer负载均衡算法](https://juejin.im/post/5baca032e51d450e735e74af)
 - [详解蚂蚁金服大规模分布式架构下数据一致性实践](https://mp.weixin.qq.com/s/eGcTO-zLUwtgqYmpyREm1Q)
+- [TCC分布式事务的实现原理](https://juejin.im/post/5bf201f7f265da610f63528a)
 
 ### Dubbo
 - [Dubbo 的 8000 字图文详解，建议收藏！](https://mp.weixin.qq.com/s/bwLSxsTRwhyOh_gTU0GVnQ)
