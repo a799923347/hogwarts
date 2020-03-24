@@ -7,7 +7,9 @@
 > 魔幻小说《哈利·波特》系列中魔法学校的主要场景，据称是欧洲三大魔法学校之一。  
 > --维基百科[霍格沃茨魔法学校](https://zh.wikipedia.org/wiki/%E9%9C%8D%E6%A0%BC%E8%8F%AF%E8%8C%B2%E9%AD%94%E6%B3%95%E8%88%87%E5%B7%AB%E8%A1%93%E5%AD%B8%E9%99%A2)  
 > 本库主要用于本人平时的学习积累以及技术上一些相关想法的实践。遂取名Hogwarts，即学习的地方。
+
 ---
+
 ## 目录
 - [Java](#Java)
 - [数据结构](#数据结构)
@@ -131,6 +133,10 @@
 - [Java设计模式](https://java-design-patterns.com/)
 
 ### LeetCode
+
+<details>
+<summary>点击展开列表</summary>
+
 - [有效的括号](src/main/java/com/bowen/hogwarts/leetcode/BracketIsValid.java)
 - [括号生成](src/main/java/com/bowen/hogwarts/leetcode/GenerateParenthesis.java)
 - [整数反转](src/main/java/com/bowen/hogwarts/leetcode/IntegerReverse.java)
@@ -167,6 +173,9 @@
 - [最长上升子序列](src/main/java/com/bowen/hogwarts/leetcode/LengthOfLis.java)
 - [合并区间](src/main/java/com/bowen/hogwarts/leetcode/MergeIntervals.java)
 - [排序链表](src/main/java/com/bowen/hogwarts/leetcode/SortList.java)
+</details>
+
+
 
 ### 分享与好记性不如烂笔头
 - [Java函数式接口](files/Java函数式接口.pdf)
