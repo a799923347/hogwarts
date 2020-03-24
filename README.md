@@ -42,6 +42,7 @@
 - [Java OutOfMemory异常清单 —— 在自己的机器上制造内存溢出](https://blog.csdn.net/hzy38324/article/details/76719105)
 - [JAVA中断机制详解](https://www.cnblogs.com/wxgblogs/p/5416788.html)
 - [HashMap? ConcurrentHashMap? 相信看完这篇没人能难住你！](https://juejin.im/post/5b551e8df265da0f84562403)
+- [永久代与元数据区](https://juejin.im/post/5dae7e5de51d45249850cf9f)
 
 
 ### 数据结构
