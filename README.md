@@ -22,6 +22,7 @@
 - [Dubbo](#Dubbo)
 - [计算机网络](#计算机网络)
 - [数据库](#数据库)
+- [Hadoop](#Hadoop)
 - [设计模式](#设计模式)
 - [LeetCode](#LeetCode)
 - [分享与好记性不如烂笔头](#分享与好记性不如烂笔头)
@@ -128,6 +129,12 @@
 - [这一次，彻底读懂Mysql执行计划](https://juejin.im/post/5a52386d51882573443c852a)
 - [MySQL的InnoDB索引原理详解](https://kyle.ai/blog/6439.html)
 - [B树和B+树的插入、删除图文详解](https://www.cnblogs.com/nullzx/p/8729425.html)
+
+### Hadoop
+- [Hadoop伪分布式环境搭建](https://juejin.im/post/5b8e94c1e51d451a447a97ae)
+- [HDFS 详细解析](https://juejin.im/post/5b9727d2e51d450e79034030)
+- [YARN 详细解析](https://juejin.im/post/5bb59eb65188255c5121d650)
+- [MapReduce 原理讲解](https://juejin.im/post/5bb59f87f265da0aeb7118f2)
 
 ### 设计模式
 - [Java设计模式](https://java-design-patterns.com/)
