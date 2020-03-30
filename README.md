@@ -135,6 +135,7 @@
 - [HDFS 详细解析](https://juejin.im/post/5b9727d2e51d450e79034030)
 - [YARN 详细解析](https://juejin.im/post/5bb59eb65188255c5121d650)
 - [MapReduce 原理讲解](https://juejin.im/post/5bb59f87f265da0aeb7118f2)
+- [MapReduce之Shuffle过程详述](https://matt33.com/2016/03/02/hadoop-shuffle/)
 
 ### 设计模式
 - [Java设计模式](https://java-design-patterns.com/)
