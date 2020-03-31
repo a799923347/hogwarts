@@ -109,6 +109,7 @@
 - [详解蚂蚁金服大规模分布式架构下数据一致性实践](https://mp.weixin.qq.com/s/eGcTO-zLUwtgqYmpyREm1Q)
 - [TCC分布式事务的实现原理](https://juejin.im/post/5bf201f7f265da610f63528a)
 - [最终一致性分布式事务如何保障实际生产中99.99%高可用](https://juejin.im/post/5bf2c6b6e51d456693549af4)
+- [分布式系统理论之Quorum机制](https://www.cnblogs.com/hapjin/p/5626889.html)
 
 ### Dubbo
 - [Dubbo 的 8000 字图文详解，建议收藏！](https://mp.weixin.qq.com/s/bwLSxsTRwhyOh_gTU0GVnQ)
@@ -229,6 +230,7 @@
     - [Sentinel原理：滑动窗口](https://github.com/all4you/sentinel-tutorial/blob/master/sentinel-principle/sentinel-slide-window/sentinel-slide-window.md)
     - [Sentinel工作主流程](https://github.com/alibaba/Sentinel/wiki/Sentinel%E5%B7%A5%E4%BD%9C%E4%B8%BB%E6%B5%81%E7%A8%8B)
     - [Sentinel 核心类解析](https://github.com/alibaba/Sentinel/wiki/Sentinel-%E6%A0%B8%E5%BF%83%E7%B1%BB%E8%A7%A3%E6%9E%90)
+    - [朋友圈式的Timeline设计方案](https://www.myway5.com/index.php/2017/06/29/timeline-design/)
     
 ### 工具
 - [Mac环境搭建](https://mp.weixin.qq.com/s/HpxzVOZYhm0flf3ziANcGg)
