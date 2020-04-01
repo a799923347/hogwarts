@@ -84,6 +84,10 @@
 
 
 ### 缓存
+
+<details>
+<summary>点击展开列表</summary>
+
 - [Redis基础](https://juejin.im/post/5db66ed9e51d452a2f15d833)
 - [缓存雪崩、击穿、穿透](https://juejin.im/post/5dbef8306fb9a0203f6fa3e2)
 - [Redis哨兵、持久化、主从、手撕LRU](https://juejin.im/post/5dc3a9fbf265da4d3c072eab)
@@ -96,6 +100,8 @@
 - [Redis持久化机制：RDB和AOF](https://juejin.im/post/5d776dcef265da03b574744d)
 - [Redis 为什么用跳表而不用平衡树？](https://juejin.im/post/57fa935b0e3dd90057c50fbc)
 - [Redis面试题（一）: Redis到底是多线程还是单线程？](https://blog.csdn.net/bird73/article/details/79792548)
+- [关于Redis热点key的一些思考](https://juejin.im/post/5d259544f265da1bd522f689)
+</details>
 
 ### 消息队列
 - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
