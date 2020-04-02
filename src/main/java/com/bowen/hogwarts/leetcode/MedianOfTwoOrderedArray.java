@@ -89,48 +89,74 @@ public class MedianOfTwoOrderedArray {
   }
 
   /**
-   * 递归法
-   * 时间复杂度：O(log(min(m,n)))，
-   * 首先，查找的区间是 [0, m][0,m]。
-   * 而该区间的长度在每次循环之后都会减少为原来的一半。
-   * 所以，我们只需要执行 log(m) 次循环。由于我们在每次循环中进行常量次数的操作，所以时间复杂度为 O(log(m))
-   * 由于 m≤n，所以时间复杂度是 O(log(min(m,n)))。
    *
-   * 空间复杂度：O(1)，
-   * 我们只需要恒定的内存来存储 99 个局部变量， 所以空间复杂度为 O(1)。
+   * 执行用时 :2 ms, 在所有 Java 提交中击败了100.00%的用户
+   * 内存消耗 :41 MB, 在所有 Java 提交中击败了98.55%的用户
    */
-  public double findMedianSortedArrays2(int[] A, int[] B) {
-    int m = A.length;
-    int n = B.length;
+  public double findMedianSortedArrays2(int[] nums1, int[] nums2) {
+    int m = nums1.length;
+    int n = nums2.length;
     // to ensure m<=n
+    // 保证A数组一定是较短的数组
     if (m > n) {
-      int[] temp = A; A = B; B = temp;
-      int tmp = m; m = n; n = tmp;
+      int[] temp = nums1;
+      nums1 = nums2;
+      nums2 = temp;
+      int tmp = m;
+      m = n;
+      n = tmp;
     }
+    // iMin、iMax 是数组1的两个游标
+    // halfLen：中位数在两个数组中确切的位置
     int iMin = 0, iMax = m, halfLen = (m + n + 1) / 2;
     while (iMin <= iMax) {
       int i = (iMin + iMax) / 2;
+      // j 的位置与 i 是关于 halfLen 联动的
       int j = halfLen - i;
-      if (i < iMax && B[j-1] > A[i]){
+      if (i < iMax && nums2[j - 1] > nums1[i]) {
         // i is too small
+        // 数组2的左边部分最大值 > 数组1右边部分的最小值，则说明 iMin 游标位置偏小，将 iMin 右移
         iMin = i + 1;
-      }
-      else if (i > iMin && A[i-1] > B[j]) {
+      } else if (i > iMin && nums1[i - 1] > nums2[j]) {
         // i is too big
+        // 数组1左边部分的最大值 > 数组2右边部分的最小值，则说明 iMax 右边位置偏大，将 iMax 左移
         iMax = i - 1;
-      }
-      else {
+      } else {
         // i is perfect
+        // 这个时候 i、j 的位置刚刚好，nums2[j - 1] <= nums1[i] 且 nums1[i - 1] <= nums2[j]
         int maxLeft = 0;
-        if (i == 0) { maxLeft = B[j-1]; }
-        else if (j == 0) { maxLeft = A[i-1]; }
-        else { maxLeft = Math.max(A[i-1], B[j-1]); }
-        if ( (m + n) % 2 == 1 ) { return maxLeft; }
+        if (i == 0) {
+          // i == 0 说明整个数组左边部分全部由 数组2 中的左边部分组成
+          maxLeft = nums2[j - 1];
+        } else if (j == 0) {
+          // j == 0 说明整个数组左边部分全部由 数组1 中的左边部分组成
+          maxLeft = nums1[i - 1];
+        } else {
+          // 整个数组的左边部分由 数组1 的左边部分和 数组2 的左边部分共同组成，
+          // 所以取 nums1[i - 1] 和 nums2[j - 1] 两个较大的值
+          maxLeft = Math.max(nums1[i - 1], nums2[j - 1]);
+        }
+        // 如果两个数组总长度为奇数，则直接返回 maxLeft，
+        // 因为 halfLen = (m + n + 1) / 2，
+        // 而 int j = halfLen - i，
+        // 所以总长度为奇数时 maxLeft 就是中位数
+        if ((m + n) % 2 == 1) {
+          return maxLeft;
+        }
 
+        // 总长度为偶数，还需要再判断出右边最小的的值
         int minRight = 0;
-        if (i == m) { minRight = B[j]; }
-        else if (j == n) { minRight = A[i]; }
-        else { minRight = Math.min(B[j], A[i]); }
+        if (i == m) {
+          // i == m 则说明整个数组的右边部分全部由 数组2 的右边部分组成
+          minRight = nums2[j];
+        } else if (j == n) {
+          // j == n 则说明整个数组的右边部分全部由 数组1 的右边部分组成
+          minRight = nums1[i];
+        } else {
+          // 整个数组的右边部分由 数组1 的右边部分和 数组2 的右边部分共同组成
+          // 所以取 nums2[j] 和 nums1[i] 中较小的值
+          minRight = Math.min(nums2[j], nums1[i]);
+        }
 
         return (maxLeft + minRight) / 2.0;
       }
