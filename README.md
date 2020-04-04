@@ -146,6 +146,7 @@
 - [MapReduce之Shuffle过程详述](https://matt33.com/2016/03/02/hadoop-shuffle/)
 
 ### 设计模式
+- [设计模式之禅-设计原则](https://mp.weixin.qq.com/s/7NTLIDkB6_rmhrp2xm1z4Q)
 - [Java设计模式](https://java-design-patterns.com/)
 
 ### LeetCode
