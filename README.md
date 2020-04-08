@@ -106,12 +106,12 @@
 ### 消息队列
 - [再谈基于 Kafka 和 ZooKeeper 的分布式消息队列原理](https://gitbook.cn/books/5bc446269a9adf54c7ccb8bc/index.html)
 - [Kafka为什么速度那么快？](https://juejin.im/post/5cd2db8951882530b11ee976)
+- [Kafka的Consumer负载均衡算法](https://juejin.im/post/5baca032e51d450e735e74af)
 
 ### 分布式理论
 - [多图：Raft算法原理非常详细的解读](https://mp.weixin.qq.com/s/OwYcrSOwH-n_65u9PPUqoA)
 - [面试再被问到一致性 Hash 算法，这样回答面试官！](https://mp.weixin.qq.com/s/bnuo7knTnp1U7ggEh840iQ)
 - [CAP 一致性协议及应用解析](https://segmentfault.com/a/1190000018275818)
-- [Kafka的Consumer负载均衡算法](https://juejin.im/post/5baca032e51d450e735e74af)
 - [详解蚂蚁金服大规模分布式架构下数据一致性实践](https://mp.weixin.qq.com/s/eGcTO-zLUwtgqYmpyREm1Q)
 - [TCC分布式事务的实现原理](https://juejin.im/post/5bf201f7f265da610f63528a)
 - [最终一致性分布式事务如何保障实际生产中99.99%高可用](https://juejin.im/post/5bf2c6b6e51d456693549af4)
