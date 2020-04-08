@@ -116,6 +116,7 @@
 - [TCC分布式事务的实现原理](https://juejin.im/post/5bf201f7f265da610f63528a)
 - [最终一致性分布式事务如何保障实际生产中99.99%高可用](https://juejin.im/post/5bf2c6b6e51d456693549af4)
 - [分布式系统理论之Quorum机制](https://www.cnblogs.com/hapjin/p/5626889.html)
+- [微服务下如何保证事务的一致性](https://mp.weixin.qq.com/s/SfU5gNFA4hEMiSZz6Q0I0Q)
 
 ### Dubbo
 - [Dubbo 的 8000 字图文详解，建议收藏！](https://mp.weixin.qq.com/s/bwLSxsTRwhyOh_gTU0GVnQ)
