@@ -33,6 +33,10 @@
 ---
 
 ### Java
+
+<details>
+<summary>点击展开列表</summary>
+
 - [从实际案例聊聊Java应用的GC优化](https://mp.weixin.qq.com/s?__biz=MjM5NjQ5MTI5OA==&mid=2651747273&idx=1&sn=7f947064a41eeecb6816a5d0838581ae&chksm=bd12aa848a65239289d5c39264e89bd175f377f6554bfe93b37ad6498cf13deff356333c5398&scene=21#wechat_redirect)
 - [了解 CMS 垃圾回收日志](http://ifeve.com/jvm-cms-log/)
 - [GC之详解CMS收集过程和日志分析](https://www.cnblogs.com/zhangxiaoguang/p/5792468.html)
@@ -47,7 +51,7 @@
 - [HashMap? ConcurrentHashMap? 相信看完这篇没人能难住你！](https://juejin.im/post/5b551e8df265da0f84562403)
 - [永久代与元数据区](https://juejin.im/post/5dae7e5de51d45249850cf9f)
 - [基于Java Agent与Javassist实现零侵入AOP](https://ouyblog.com/2019/03/%E5%9F%BA%E4%BA%8EJava-Agent%E4%B8%8EJavassist%E5%AE%9E%E7%8E%B0%E9%9B%B6%E4%BE%B5%E5%85%A5AOP)
-
+</details>
 
 ### 数据结构
 - 树
