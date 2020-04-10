@@ -46,6 +46,7 @@
 - [JAVA中断机制详解](https://www.cnblogs.com/wxgblogs/p/5416788.html)
 - [HashMap? ConcurrentHashMap? 相信看完这篇没人能难住你！](https://juejin.im/post/5b551e8df265da0f84562403)
 - [永久代与元数据区](https://juejin.im/post/5dae7e5de51d45249850cf9f)
+- [基于Java Agent与Javassist实现零侵入AOP](https://ouyblog.com/2019/03/%E5%9F%BA%E4%BA%8EJava-Agent%E4%B8%8EJavassist%E5%AE%9E%E7%8E%B0%E9%9B%B6%E4%BE%B5%E5%85%A5AOP)
 
 
 ### 数据结构
