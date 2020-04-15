@@ -6,6 +6,7 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 /**
+ * 自定义builder工具
  * @author zhaobaowen
  */
 public class Builder<T> {
