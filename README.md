@@ -44,6 +44,7 @@
 - [JVM 必问知识点:类加载过程](https://mp.weixin.qq.com/s/jut6U-J5XubPOk5eiEWZew)
 - [Java异常体系(美团面试)](https://www.cnblogs.com/aspirant/p/10790803.html)
 - [面试常问的PECS原则，到底是什么鬼？](https://mp.weixin.qq.com/s/-xEqJttBB2R0MW6M66G7IA)
+- [解释下 Java 术语的逆变、协变、不变是什么](https://mp.weixin.qq.com/s/SiK3rcZNhHCldiQzIql8_g)
 - [不了解Java反射机制？看这篇就明白了！](https://mp.weixin.qq.com/s/kO0kVh2KwxiGMhh25LKLqQ)
 - [必会的44个Java性能优化细节！](https://mp.weixin.qq.com/s/pxKSlVBSTnEL0MuiY7UKBg)
 - [Java OutOfMemory异常清单 —— 在自己的机器上制造内存溢出](https://blog.csdn.net/hzy38324/article/details/76719105)
