@@ -209,6 +209,8 @@
 - [sql多余的引号可能导致的索引失效问题](files/sql多余的引号可能导致的索引失效问题.md)
 - [死锁](files/死锁.md)
 - [ThreadPoolExecutor笔记](files/ThreadPoolExecutor笔记.md)
+- [shell编程笔记](files/shell编程笔记.md)
+
 ### 开发模式
 - [软件开发模式对比(瀑布、迭代、螺旋、敏捷)](https://www.cnblogs.com/-oyk/archive/2012/10/08/2714669.html)
 - [软件能力成熟度模型](https://baike.baidu.com/item/%E8%BD%AF%E4%BB%B6%E8%83%BD%E5%8A%9B%E6%88%90%E7%86%9F%E5%BA%A6%E6%A8%A1%E5%9E%8B)
