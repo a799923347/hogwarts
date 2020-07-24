@@ -106,7 +106,6 @@
 - [（讨论）缓存同步、如何保证缓存一致性、缓存误用](https://segmentfault.com/a/1190000015804406)
 - [Redis持久化机制：RDB和AOF](https://juejin.im/post/5d776dcef265da03b574744d)
 - [Redis 为什么用跳表而不用平衡树？](https://juejin.im/post/57fa935b0e3dd90057c50fbc)
-- [Redis面试题（一）: Redis到底是多线程还是单线程？](https://blog.csdn.net/bird73/article/details/79792548)
 - [关于Redis热点key的一些思考](https://juejin.im/post/5d259544f265da1bd522f689)
 </details>
 
