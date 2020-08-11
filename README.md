@@ -247,6 +247,7 @@
     - [Sentinel工作主流程](https://github.com/alibaba/Sentinel/wiki/Sentinel%E5%B7%A5%E4%BD%9C%E4%B8%BB%E6%B5%81%E7%A8%8B)
     - [Sentinel 核心类解析](https://github.com/alibaba/Sentinel/wiki/Sentinel-%E6%A0%B8%E5%BF%83%E7%B1%BB%E8%A7%A3%E6%9E%90)
     - [朋友圈式的Timeline设计方案](https://www.myway5.com/index.php/2017/06/29/timeline-design/)
+    - [性能之争：响应式编程真的有效吗？](https://www.infoq.cn/article/xYCWYK9*TfmpFNO6RkWt)
     
 ### 工具
 - [Mac环境搭建](https://mp.weixin.qq.com/s/HpxzVOZYhm0flf3ziANcGg)
