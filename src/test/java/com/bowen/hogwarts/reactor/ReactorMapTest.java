@@ -11,6 +11,9 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 import reactor.test.StepVerifier;
 
+/**
+ * flatMap操作与subscribeOn方法结合使用时，可以释放reactor反应式的异步能力
+ */
 public class ReactorMapTest {
 
   @Test
