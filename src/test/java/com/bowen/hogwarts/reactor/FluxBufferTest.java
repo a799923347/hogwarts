@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.junit.Test;
 import reactor.core.publisher.Flux;
+import reactor.core.scheduler.Schedulers;
 import reactor.test.StepVerifier;
 
 /**
@@ -24,5 +25,18 @@ public class FluxBufferTest {
         .expectNext(Arrays.asList("kiwi", "strawberry"))
         .verifyComplete();
 
+  }
+
+  @Test
+  public void test_buffer_parallel() {
+
+    Flux
+        .just("apple", "orange", "banana", "kiwi", "strawberry")
+        .buffer(3)
+        .flatMap(x -> Flux.fromIterable(x)
+            .map(String::toUpperCase)
+            .subscribeOn(Schedulers.parallel())
+            .log())
+        .subscribe();
   }
 }
