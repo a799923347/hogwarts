@@ -12,6 +12,7 @@
 
 ## 目录
 - [Java](#Java)
+- [JVM](#JVM)
 - [数据结构](#数据结构)
 - [排序算法](#排序算法)
 - [操作系统](#操作系统)
@@ -54,6 +55,16 @@
 - [基于Java Agent与Javassist实现零侵入AOP](https://ouyblog.com/2019/03/%E5%9F%BA%E4%BA%8EJava-Agent%E4%B8%8EJavassist%E5%AE%9E%E7%8E%B0%E9%9B%B6%E4%BE%B5%E5%85%A5AOP)
 - [万字讲解SPI机制，完爆面试知识点](https://mp.weixin.qq.com/s/QKXz1idNs5MJI-FcKXWaIg)
 </details>
+
+### JVM
+- [Useful JVM Flags – Part 1 (JVM Types and Compiler Modes)](https://blog.codecentric.de/en/2012/07/useful-jvm-flags-part-1-jvm-types-and-compiler-modes/)
+- [Useful JVM Flags – Part 2 (Flag Categories and JIT Compiler Diagnostics)](https://blog.codecentric.de/en/2012/07/useful-jvm-flags-part-2-flag-categories-and-jit-compiler-diagnostics/)
+- [Useful JVM Flags – Part 3 (Printing all XX Flags and their Values)](https://blog.codecentric.de/en/2012/07/useful-jvm-flags-part-3-printing-all-xx-flags-and-their-values/)
+- [Useful JVM Flags – Part 4 (Heap Tuning)](https://blog.codecentric.de/en/2012/07/useful-jvm-flags-part-4-heap-tuning/)
+- [Useful JVM Flags – Part 5 (Young Generation Garbage Collection)](https://blog.codecentric.de/en/2012/08/useful-jvm-flags-part-5-young-generation-garbage-collection/)
+- [Useful JVM Flags – Part 6 (Throughput Collector)](https://blog.codecentric.de/en/2013/01/useful-jvm-flags-part-6-throughput-collector/)
+- [Useful JVM Flags – Part 7 (CMS Collector)](https://blog.codecentric.de/en/2013/10/useful-jvm-flags-part-7-cms-collector/)
+- [Useful JVM Flags – Part 8 (GC Logging)](https://blog.codecentric.de/en/2014/01/useful-jvm-flags-part-8-gc-logging/)
 
 ### 数据结构
 - 树
