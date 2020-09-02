@@ -57,14 +57,14 @@
 </details>
 
 ### JVM
-- [Useful JVM Flags – Part 1 (JVM Types and Compiler Modes)](https://blog.codecentric.de/en/2012/07/useful-jvm-flags-part-1-jvm-types-and-compiler-modes/)
-- [Useful JVM Flags – Part 2 (Flag Categories and JIT Compiler Diagnostics)](https://blog.codecentric.de/en/2012/07/useful-jvm-flags-part-2-flag-categories-and-jit-compiler-diagnostics/)
-- [Useful JVM Flags – Part 3 (Printing all XX Flags and their Values)](https://blog.codecentric.de/en/2012/07/useful-jvm-flags-part-3-printing-all-xx-flags-and-their-values/)
-- [Useful JVM Flags – Part 4 (Heap Tuning)](https://blog.codecentric.de/en/2012/07/useful-jvm-flags-part-4-heap-tuning/)
-- [Useful JVM Flags – Part 5 (Young Generation Garbage Collection)](https://blog.codecentric.de/en/2012/08/useful-jvm-flags-part-5-young-generation-garbage-collection/)
-- [Useful JVM Flags – Part 6 (Throughput Collector)](https://blog.codecentric.de/en/2013/01/useful-jvm-flags-part-6-throughput-collector/)
-- [Useful JVM Flags – Part 7 (CMS Collector)](https://blog.codecentric.de/en/2013/10/useful-jvm-flags-part-7-cms-collector/)
-- [Useful JVM Flags – Part 8 (GC Logging)](https://blog.codecentric.de/en/2014/01/useful-jvm-flags-part-8-gc-logging/)
+- [JVM实用参数（一）JVM类型以及编译器模式](http://ifeve.com/useful-jvm-flags-part-1-jvm-types-and-compiler-modes-2/)
+- [JVM实用参数（二）参数分类和即时（JIT）编译器诊断](http://ifeve.com/useful-jvm-flags-part-2-flag/)
+- [JVM实用参数（三）打印所有XX参数及值](http://ifeve.com/useful-jvm-flags-part-3-printing-all-xx-flags-and-their-values/)
+- [JVM实用参数（四）内存调优](http://ifeve.com/useful-jvm-flags-part-4-heap-tuning/)
+- [JVM实用参数（五）新生代垃圾回收](http://ifeve.com/useful-jvm-flags-part-5-young-generation-garbage-collection/)
+- [JVM实用参数（六） 吞吐量收集器](http://ifeve.com/useful-jvm-flags-part-6-throughput-collector/)
+- [JVM实用参数（七）CMS收集器](http://ifeve.com/useful-jvm-flags-part-7-cms-collector/)
+- [JVM实用参数（八）GC日志](http://ifeve.com/useful-jvm-flags-part-8-gc-logging/)
 
 ### 数据结构
 - 树
