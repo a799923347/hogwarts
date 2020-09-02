@@ -65,6 +65,7 @@
 - [JVM实用参数（六） 吞吐量收集器](http://ifeve.com/useful-jvm-flags-part-6-throughput-collector/)
 - [JVM实用参数（七）CMS收集器](http://ifeve.com/useful-jvm-flags-part-7-cms-collector/)
 - [JVM实用参数（八）GC日志](http://ifeve.com/useful-jvm-flags-part-8-gc-logging/)
+- [了解 CMS 垃圾回收日志](http://ifeve.com/jvm-cms-log/)
 
 ### 数据结构
 - 树
