@@ -24,7 +24,6 @@
 - [计算机网络](#计算机网络)
 - [数据库](#数据库)
 - [Hadoop](#Hadoop)
-- [设计模式](#设计模式)
 - [LeetCode](#LeetCode)
 - [分享与好记性不如烂笔头](#分享与好记性不如烂笔头)
 - [开发模式](#开发模式)
@@ -162,10 +161,6 @@
 - [YARN 详细解析](https://juejin.im/post/5bb59eb65188255c5121d650)
 - [MapReduce 原理讲解](https://juejin.im/post/5bb59f87f265da0aeb7118f2)
 - [MapReduce之Shuffle过程详述](https://matt33.com/2016/03/02/hadoop-shuffle/)
-
-### 设计模式
-- [设计模式之禅-设计原则](https://mp.weixin.qq.com/s/7NTLIDkB6_rmhrp2xm1z4Q)
-- [Java设计模式](https://java-design-patterns.com/)
 
 ### LeetCode
 
