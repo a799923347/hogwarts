@@ -264,3 +264,4 @@
 - [IDEA 2019.3激活破解教程（永久）](https://juejin.im/post/5df8a5a5e51d4557f0460990)
 - [Mac下用Charles实现Android http和https抓包](https://blog.csdn.net/luochoudan/article/details/72801573)
 - [vi/vim使用进阶: 指随意动，移动如飞 (一)](https://blog.easwy.com/archives/advanced-vim-skills-basic-move-method/)
+- [homebrew国内镜像](https://frankindev.com/2020/05/15/replace-homebrew-source/)
