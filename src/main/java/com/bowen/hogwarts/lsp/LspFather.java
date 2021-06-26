@@ -2,6 +2,7 @@ package com.bowen.hogwarts.lsp;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author zhaobaowen

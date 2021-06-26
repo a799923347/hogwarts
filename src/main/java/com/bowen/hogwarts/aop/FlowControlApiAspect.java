@@ -39,4 +39,8 @@ public class FlowControlApiAspect {
     }
   }
 
+  public Object method() {
+    return null;
+  }
+
 }
