@@ -154,6 +154,7 @@
 - [这一次，彻底读懂Mysql执行计划](https://juejin.im/post/5a52386d51882573443c852a)
 - [MySQL的InnoDB索引原理详解](https://kyle.ai/blog/6439.html)
 - [B树和B+树的插入、删除图文详解](https://www.cnblogs.com/nullzx/p/8729425.html)
+- [读《MySQL 实战》01 Server层和存储引擎](http://www.linkedkeeper.com/1304.html)
 
 ### Hadoop
 - [Hadoop伪分布式环境搭建](https://juejin.im/post/5b8e94c1e51d451a447a97ae)
